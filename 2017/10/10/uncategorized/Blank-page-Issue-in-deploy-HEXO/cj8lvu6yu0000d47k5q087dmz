@@ -250,7 +250,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lsoflb00003o7kdv9by5m1" />
+        <link rel="canonical" href="http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lvu6yu0000d47k5q087dmz" />
     
 
     <!-- Structured-data for SEO -->
@@ -262,7 +262,7 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lsoflb00003o7kdv9by5m1",
+    "mainEntityOfPage": "http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lvu6yu0000d47k5q087dmz",
     "headline": "Blank page Issue in deploy HEXO",
     "datePublished": "Tue Oct 10 2017 23:36:25 GMT+0800",
     "dateModified": "Wed Oct 11 2017 00:02:02 GMT+0800",
@@ -273,7 +273,7 @@
             "@type": "ImageObject",
             "url": "/img/avatar.png"
         },
-        "description": "Hi, nice to meet you"
+        "description": "Way to Explore."
     },
     "publisher": {
         "@type": "Organization",
@@ -360,15 +360,8 @@
     <!-- Paradox Post Header -->
     
         
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-            <script type="text/ls-javascript" id="post-thumbnail-script">
-    var randomNum = Math.floor(Math.random() * 19 + 1);
-
-    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
-</script>
-
+            <!-- Pure Thumbnail -->
+            <div class="post_thumbnail-pure mdl-card__media mdl-color-text--grey-50" style="background-color:#c7d0d5 !important">
         
     
             <p class="article-headline-p">
@@ -423,7 +416,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Blank page Issue in deploy HEXO&url=http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lsoflb00003o7kdv9by5m1&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Blank page Issue in deploy HEXO&url=http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lvu6yu0000d47k5q087dmz&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -432,7 +425,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Blank page Issue in deploy HEXO&url=http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lsoflb00003o7kdv9by5m1&via=JC" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Blank page Issue in deploy HEXO&url=http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lvu6yu0000d47k5q087dmz&via=JC" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -441,7 +434,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lsoflb00003o7kdv9by5m1" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lvu6yu0000d47k5q087dmz" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -450,7 +443,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lsoflb00003o7kdv9by5m1" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lvu6yu0000d47k5q087dmz" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -461,6 +454,12 @@
     
 
     <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=冻柠七的剥壳&title=Blank page Issue in deploy HEXO&summary=吸猫的以及在地铁站扔一块砖就能砸死的JAVA程序猿.&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lvu6yu0000d47k5q087dmz" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
     
 
     <!-- Share Telegram -->
@@ -541,7 +540,7 @@ hexo d
 
     <!-- Sidebar Email -->
     <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
-        youremail@email.com
+        pofy_jerry@hotmail.com
         <b class="caret"></b>
     </a>
 </div>
@@ -597,6 +596,21 @@ hexo d
     
 
     <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                
+            </ul>
+        </li>
+        
     
 
     <!-- Pages  -->
@@ -674,32 +688,20 @@ It will not impact the appearance and can give developers a lot of support :)
         <div class="mdl-mini-footer--left-section sns-list">
     <!-- Twitter -->
     
-        <a href="https://twitter.com/twitter" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
-                <span class="visuallyhidden">Twitter</span>
-            </button><!--
-     --></a>
-    
 
     <!-- Facebook -->
-    
-        <a href="https://www.facebook.com/facebook" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn footer-sns-facebook">
-                <span class="visuallyhidden">Facebook</span>
-            </button><!--
-     --></a>
     
 
     <!-- Google + -->
     
-        <a href="https://www.google.com/" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
-                <span class="visuallyhidden">Google Plus</span>
-            </button><!--
-     --></a>
-    
 
     <!-- Weibo -->
+    
+        <a href="http://weibo.com/pofycn" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-weibo">
+                <span class="visuallyhidden">Weibo</span>
+            </button><!--
+     --></a>
     
 
     <!-- Instagram -->
@@ -709,6 +711,12 @@ It will not impact the appearance and can give developers a lot of support :)
     
 
     <!-- Github -->
+    
+        <a href="https://github.com/pofycn" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
     
 
     <!-- LinkedIn -->
@@ -730,7 +738,7 @@ It will not impact the appearance and can give developers a lot of support :)
 
         <!--Copyright-->
         <div id="copyright">
-            Copyright&nbsp;©<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>冻柠七的剥壳
+            Copyright&nbsp;©&nbsp;2017&nbsp;-<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>冻柠七的剥壳
             
         </div>
 
@@ -789,6 +797,10 @@ It will not impact the appearance and can give developers a lot of support :)
 </script>
 
 
+
+    
+        <script>lsloader.load("sm_js","/js/smoothscroll.js?tNQK2Tw2SUL8a1Scn/Mgew==", true)</script>
+    
 
 
 
