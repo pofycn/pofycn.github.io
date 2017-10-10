@@ -39,7 +39,7 @@
         
             Blank page Issue in deploy HEXO | 
         
-        POFY&#39;s Blog
+        冻柠七的剥壳
     </title>
 
     <!-- Meta & Info -->
@@ -48,7 +48,7 @@
     <meta name="format-detection" content="telephone=no"/>
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="JC">
-    <meta name="description" itemprop="description" content="The thing always happens that you really believe in.">
+    <meta name="description" itemprop="description" content="吸猫的以及在地铁站扔一块砖就能砸死的JAVA程序猿.">
     <meta name="keywords" content="">
 
     <!-- Import lsloader -->
@@ -75,7 +75,7 @@
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="POFY&#39;s Blog">
+    <meta name="apple-mobile-web-app-title" content="冻柠七的剥壳">
 
     <!-- Site Verification -->
     
@@ -88,7 +88,7 @@
         <link rel="stylesheet" href="/css/ie-blocker.css">
 
         
-            <script src="/js/ie-blocker.en.js"></script>
+            <script src="/js/ie-blocker.zhCN.js"></script>
         
     <![endif]-->
 
@@ -231,9 +231,9 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://yoursite.com">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Blank page Issue in deploy HEXO | POFY&#39;s Blog">
+    <meta property="og:title" content="Blank page Issue in deploy HEXO | 冻柠七的剥壳">
     <meta property="og:image" content="http://yoursite.com/img/favicon.png" />
-    <meta property="og:description" content="The thing always happens that you really believe in.">
+    <meta property="og:description" content="吸猫的以及在地铁站扔一块砖就能砸死的JAVA程序猿.">
     
 
     
@@ -242,15 +242,15 @@
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="Blank page Issue in deploy HEXO | POFY&#39;s Blog">
-    <meta name="twitter:description" content="The thing always happens that you really believe in.">
+    <meta name="twitter:title" content="Blank page Issue in deploy HEXO | 冻柠七的剥壳">
+    <meta name="twitter:description" content="吸猫的以及在地铁站扔一块砖就能砸死的JAVA程序猿.">
     <meta name="twitter:image" content="http://yoursite.com/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="http://yoursite.com" />
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lrv2800000mw7kafbaoma8" />
+        <link rel="canonical" href="http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8ls3f880000jk7k6qgiottt" />
     
 
     <!-- Structured-data for SEO -->
@@ -262,7 +262,7 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lrv2800000mw7kafbaoma8",
+    "mainEntityOfPage": "http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8ls3f880000jk7k6qgiottt",
     "headline": "Blank page Issue in deploy HEXO",
     "datePublished": "Tue Oct 10 2017 23:36:25 GMT+0800",
     "dateModified": "Tue Oct 10 2017 23:36:25 GMT+0800",
@@ -277,14 +277,14 @@
     },
     "publisher": {
         "@type": "Organization",
-        "name": "POFY&#39;s Blog",
+        "name": "冻柠七的剥壳",
         "logo": {
             "@type":"ImageObject",
             "url": "/img/favicon.png"
         }
     },
     "keywords": "",
-    "description": "The thing always happens that you really believe in.",
+    "description": "吸猫的以及在地铁站扔一块砖就能砸死的JAVA程序猿.",
 }
 </script>
 
@@ -391,7 +391,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>JC</strong>
-        <span>Oct 10, 2017</span>
+        <span>10月 10, 2017</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -423,36 +423,36 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Blank page Issue in deploy HEXO&url=http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lrv2800000mw7kafbaoma8&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Blank page Issue in deploy HEXO&url=http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8ls3f880000jk7k6qgiottt&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
-                شارك على Weibo
+                分享到微博
             </li>
         </a>
     
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Blank page Issue in deploy HEXO&url=http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lrv2800000mw7kafbaoma8&via=JC" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Blank page Issue in deploy HEXO&url=http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8ls3f880000jk7k6qgiottt&via=JC" target="_blank">
             <li class="mdl-menu__item">
-                شارك على Twitter
+                分享到 Twitter
             </li>
         </a>
     
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lrv2800000mw7kafbaoma8" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8ls3f880000jk7k6qgiottt" target="_blank">
             <li class="mdl-menu__item">
-                شارك على Facebook
+                分享到 Facebook
             </li>
         </a>
     
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lrv2800000mw7kafbaoma8" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8ls3f880000jk7k6qgiottt" target="_blank">
             <li class="mdl-menu__item">
-                شارك على Google+
+                分享到 Google+
             </li>
         </a>
     
@@ -567,7 +567,7 @@
                 
                     <i class="material-icons sidebar-material-icons">home</i>
                 
-                الرئيسية
+                主页
             </a>
         </li>
         
@@ -580,12 +580,12 @@
                 
                     <i class="material-icons sidebar-material-icons">inbox</i>
                 
-                    أرشيف
+                    归档
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2017/10/">October 2017<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/archives/2017/10/">十月 2017<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -622,7 +622,7 @@ It will not impact the appearance and can give developers a lot of support :)
 
     <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
         <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
-            سمة - Material
+            主题 - Material
             <span class="sidebar-badge badge-circle">i</span>
         </div>
     </a>
@@ -725,7 +725,7 @@ It will not impact the appearance and can give developers a lot of support :)
 
         <!--Copyright-->
         <div id="copyright">
-            Copyright&nbsp;©<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>POFY's Blog
+            Copyright&nbsp;©<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>冻柠七的剥壳
             
         </div>
 
