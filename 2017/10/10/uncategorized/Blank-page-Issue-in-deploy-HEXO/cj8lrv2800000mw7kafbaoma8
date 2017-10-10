@@ -250,7 +250,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lrrokr00006s7kgxzorurq" />
+        <link rel="canonical" href="http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lrv2800000mw7kafbaoma8" />
     
 
     <!-- Structured-data for SEO -->
@@ -262,7 +262,7 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lrrokr00006s7kgxzorurq",
+    "mainEntityOfPage": "http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lrv2800000mw7kafbaoma8",
     "headline": "Blank page Issue in deploy HEXO",
     "datePublished": "Tue Oct 10 2017 23:36:25 GMT+0800",
     "dateModified": "Tue Oct 10 2017 23:36:25 GMT+0800",
@@ -423,36 +423,36 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Blank page Issue in deploy HEXO&url=http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lrrokr00006s7kgxzorurq&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Blank page Issue in deploy HEXO&url=http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lrv2800000mw7kafbaoma8&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
-                Share to Weibo
+                شارك على Weibo
             </li>
         </a>
     
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Blank page Issue in deploy HEXO&url=http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lrrokr00006s7kgxzorurq&via=JC" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Blank page Issue in deploy HEXO&url=http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lrv2800000mw7kafbaoma8&via=JC" target="_blank">
             <li class="mdl-menu__item">
-                Share to Twitter
+                شارك على Twitter
             </li>
         </a>
     
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lrrokr00006s7kgxzorurq" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lrv2800000mw7kafbaoma8" target="_blank">
             <li class="mdl-menu__item">
-                Share to Facebook
+                شارك على Facebook
             </li>
         </a>
     
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lrrokr00006s7kgxzorurq" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2017/10/10/uncategorized/Blank-page-Issue-in-deploy-HEXO/cj8lrv2800000mw7kafbaoma8" target="_blank">
             <li class="mdl-menu__item">
-                Share to Google+
+                شارك على Google+
             </li>
         </a>
     
@@ -567,7 +567,7 @@
                 
                     <i class="material-icons sidebar-material-icons">home</i>
                 
-                Home
+                الرئيسية
             </a>
         </li>
         
@@ -580,7 +580,7 @@
                 
                     <i class="material-icons sidebar-material-icons">inbox</i>
                 
-                    Archives
+                    أرشيف
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
@@ -622,7 +622,7 @@ It will not impact the appearance and can give developers a lot of support :)
 
     <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
         <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
-            Theme - Material
+            سمة - Material
             <span class="sidebar-badge badge-circle">i</span>
         </div>
     </a>
