@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.0 -->
+    <script>
+        window.materialVersion = "1.5.0"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Title -->
+    
+    <title>
+        
+            简单比特币原理-区块链的相关应用 | 
+        
+        POFY&#39;s Blog
+    </title>
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="theme-color" content="#0097A7">
+    <meta name="author" content="JC">
+    <meta name="description" itemprop="description" content="吸猫的以及在地铁站扔一块砖就能砸死的JAVA程序猿.">
+    <meta name="keywords" content=",BlockChain">
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(key){try{localStorage.removeItem(key)}catch(e){}};lsloader.setLS=function(key,val){try{localStorage.setItem(key,val)}catch(e){}};lsloader.getLS=function(key){var val="";try{val=localStorage.getItem(key)}catch(e){val=""}return val};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var keys=[];for(var i=0;i<localStorage.length;i++){keys.push(localStorage.key(i))}keys.forEach(function(key){var data=lsloader.getLS(key);if(window.oldVersion){var remove=window.oldVersion.reduce(function(p,c){return p||data.indexOf("/*"+c+"*/")!==-1},false);if(remove){lsloader.removeLS(key)}}})}catch(e){}};lsloader.clean();lsloader.load=function(jsname,jspath,cssonload,isJs){if(typeof cssonload==="boolean"){isJs=cssonload;cssonload=undefined}isJs=isJs||false;cssonload=cssonload||function(){};var code;code=this.getLS(jsname);if(code&&code.indexOf(versionString)===-1){this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}if(code){var versionNumber=code.split(versionString)[0];if(versionNumber!=jspath){console.log("reload:"+jspath);this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}code=code.split(versionString)[1];if(isJs){this.jsRunSequence.push({name:jsname,code:code});this.runjs(jspath,jsname,code)}else{document.getElementById(jsname).appendChild(document.createTextNode(code));cssonload()}}else{this.requestResource(jsname,jspath,cssonload,isJs)}};lsloader.requestResource=function(name,path,cssonload,isJs){var that=this;if(isJs){this.iojs(path,name,function(path,name,code){that.setLS(name,path+versionString+code);that.runjs(path,name,code)})}else{this.iocss(path,name,function(code){document.getElementById(name).appendChild(document.createTextNode(code));that.setLS(name,path+versionString+code)},cssonload)}};lsloader.iojs=function(path,jsname,callback){var that=this;that.jsRunSequence.push({name:jsname,code:""});try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(path,jsname,xhr.response);return}}that.jsfallback(path,jsname)}};xhr.send(null)}catch(e){that.jsfallback(path,jsname)}};lsloader.iocss=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.iofonts=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.runjs=function(path,name,code){if(!!name&&!!code){for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code=code}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var script=document.createElement("script");script.appendChild(document.createTextNode(this.jsRunSequence[0].code));script.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(script);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var that=this;var script=document.createElement("script");script.src=this.jsRunSequence[0].path;script.type="text/javascript";this.jsRunSequence[0].status="loading";script.onload=function(){that.jsRunSequence.shift();if(that.jsRunSequence.length>0){that.runjs()}};document.body.appendChild(script)}};lsloader.tagLoad=function(path,name){this.jsRunSequence.push({name:name,code:"",path:path,status:"failed"});this.runjs()};lsloader.jsfallback=function(path,name){if(!!this.jsnamemap[name]){return}else{this.jsnamemap[name]=name}for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code="";this.jsRunSequence[k].status="failed";this.jsRunSequence[k].path=path}}this.runjs()};lsloader.cssfallback=function(path,name,cssonload){if(!!this.cssnamemap[name]){return}else{this.cssnamemap[name]=1}var link=document.createElement("link");link.type="text/css";link.href=path;link.rel="stylesheet";link.onload=link.onerror=cssonload;var root=document.getElementsByTagName("script")[0];root.parentNode.insertBefore(link,root)};lsloader.runInlineScript=function(scriptId,codeId){var code=document.getElementById(codeId).innerText;this.jsRunSequence.push({name:scriptId,code:code});this.runjs()};lsloader.loadCombo=function(jslist){var updateList="";var requestingModules={};for(var k in jslist){var LS=this.getLS(jslist[k].name);if(!!LS){var version=LS.split(versionString)[0];var code=LS.split(versionString)[1]}else{var version=""}if(version==jslist[k].path){this.jsRunSequence.push({name:jslist[k].name,code:code,path:jslist[k].path})}else{this.jsRunSequence.push({name:jslist[k].name,code:null,path:jslist[k].path,status:"comboloading"});requestingModules[jslist[k].name]=true;updateList+=(updateList==""?"":";")+jslist[k].path}}var that=this;if(!!updateList){var xhr=new XMLHttpRequest;xhr.open("get",combo+updateList,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){that.runCombo(xhr.response,requestingModules);return}}else{for(var i in that.jsRunSequence){if(requestingModules[that.jsRunSequence[i].name]){that.jsRunSequence[i].status="failed"}}that.runjs()}}};xhr.send(null)}this.runjs()};lsloader.runCombo=function(comboCode,requestingModules){comboCode=comboCode.split("/*combojs*/");comboCode.shift();for(var k in this.jsRunSequence){if(!!requestingModules[this.jsRunSequence[k].name]&&!!comboCode[0]){this.jsRunSequence[k].status="comboJS";this.jsRunSequence[k].code=comboCode[0];this.setLS(this.jsRunSequence[k].name,this.jsRunSequence[k].path+versionString+comboCode[0]);comboCode.shift()}}this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!--iOS -->
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="POFY&#39;s Blog">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icon -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://yoursite.com">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="简单比特币原理-区块链的相关应用 | POFY&#39;s Blog">
+    <meta property="og:image" content="http://yoursite.com/img/favicon.png" />
+    <meta property="og:description" content="吸猫的以及在地铁站扔一块砖就能砸死的JAVA程序猿.">
+    <meta property="og:article:tag" content="BlockChain"> 
+
+    
+        <meta property="article:published_time" content="Thu Mar 08 2018 23:13:19 GMT+0800" />
+        <meta property="article:modified_time" content="Sat Mar 10 2018 13:14:33 GMT+0800" />
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:title" content="简单比特币原理-区块链的相关应用 | POFY&#39;s Blog">
+    <meta name="twitter:description" content="吸猫的以及在地铁站扔一块砖就能砸死的JAVA程序猿.">
+    <meta name="twitter:image" content="http://yoursite.com/img/favicon.png">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="http://yoursite.com" />
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://yoursite.com/2018/03/08/BlockChain/简单比特币原理-区块链的相关应用/cjekx2ttt0008pw7ks83uh03g/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yoursite.com/2018/03/08/BlockChain/简单比特币原理-区块链的相关应用/cjekx2ttt0008pw7ks83uh03g/index.html",
+    "headline": "简单比特币原理-区块链的相关应用",
+    "datePublished": "Thu Mar 08 2018 23:13:19 GMT+0800",
+    "dateModified": "Sat Mar 10 2018 13:14:33 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "JC",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "Way to Explore."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "POFY&#39;s Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",BlockChain",
+    "description": "吸猫的以及在地铁站扔一块砖就能砸死的JAVA程序猿.",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#简单比特币原理-区块链的相关应用"><span class="post-toc-number">1.</span> <span class="post-toc-text">简单比特币原理-区块链的相关应用</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#一-引言"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">一.引言</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#二-一个简单的案例"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">二.一个简单的案例</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#三-了解什么是加密"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">三.了解什么是加密</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#四-关于Bitcoin"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">四.关于Bitcoin</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#五-改进记账系统"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">五.改进记账系统</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#六-区块链"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">六.区块链</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#现在，看区块链如何解决上面提到过的三个一致性的问题。"><span class="post-toc-number">1.6.1.</span> <span class="post-toc-text">现在，看区块链如何解决上面提到过的三个一致性的问题。</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一、如何进行同步"><span class="post-toc-number">1.6.2.</span> <span class="post-toc-text">一、如何进行同步</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二、如何防止记录被篡改"><span class="post-toc-number">1.6.3.</span> <span class="post-toc-text">二、如何防止记录被篡改</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#三、如果防止同一笔BTC收入被重复使用"><span class="post-toc-number">1.6.4.</span> <span class="post-toc-text">三、如果防止同一笔BTC收入被重复使用</span></a></li></ol></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 11 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random_custom/crandom-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                简单比特币原理-区块链的相关应用
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>JC</strong>
+        <span>3月 08, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/BlockChain/">BlockChain</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=简单比特币原理-区块链的相关应用&url=http://yoursite.com/2018/03/08/BlockChain/简单比特币原理-区块链的相关应用/cjekx2ttt0008pw7ks83uh03g/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=简单比特币原理-区块链的相关应用&url=http://yoursite.com/2018/03/08/BlockChain/简单比特币原理-区块链的相关应用/cjekx2ttt0008pw7ks83uh03g/index.html&via=JC" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/03/08/BlockChain/简单比特币原理-区块链的相关应用/cjekx2ttt0008pw7ks83uh03g/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2018/03/08/BlockChain/简单比特币原理-区块链的相关应用/cjekx2ttt0008pw7ks83uh03g/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=POFY&#39;s Blog&title=简单比特币原理-区块链的相关应用&summary=吸猫的以及在地铁站扔一块砖就能砸死的JAVA程序猿.&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2018/03/08/BlockChain/简单比特币原理-区块链的相关应用/cjekx2ttt0008pw7ks83uh03g/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h1 id="简单比特币原理-区块链的相关应用"><a href="#简单比特币原理-区块链的相关应用" class="headerlink" title="简单比特币原理-区块链的相关应用"></a>简单比特币原理-区块链的相关应用</h1><h2 id="一-引言"><a href="#一-引言" class="headerlink" title="一.引言"></a>一.引言</h2><blockquote>
+<p>比特币（英语：Bitcoin）是一种去中心化，非普遍全球可支付的电子加密货币。比特币由中本聪（又译中本哲史）（化名）于2009年1月3日，基于无国界的对等网络，用共识主动性开源软件发明创立。截至2018年1月14日，比特币是目前市场总值最高的加密货币。<br>任何人皆可参与比特币活动，可以通过称为挖矿的电脑运算来发行。比特币协议数量上限为2100万个，以避免通货膨胀问题。使用比特币是通过私钥作为数字签名，允许个人直接支付给他人，不需经过如银行、清算中心、证券商等第三方机构，从而避免了高手续费、繁琐流程以及受监管性的问题，任何用户只要拥有可连接互联网的数字设备皆可使用。<br>关于区块链，几乎所有的技术在比特币之前都已经有了，但是在比特币之前，没有人觉得它能用，所以说比特币是区块链技术的第一个成功的应用，从某种程度讲，说比特币是第一个区块链并无不妥。</p>
+</blockquote>
+<p>接下来以一个虚构的案例简单解释比特币的原理以及区块链技术的简单应用。</p>
+<h2 id="二-一个简单的案例"><a href="#二-一个简单的案例" class="headerlink" title="二.一个简单的案例"></a>二.一个简单的案例</h2><p>A，B，C，D，E五人现整租了一套房，他们之间经常有金钱上的往来，为统一结算，每个月期间产生的费用（水电气以及房租）以及其他资金借贷约定在月底统一进行结算。于是，为了记录费用，五人将日常支出记录在客厅的白板上。</p>
+<p>有一天，A与B出门购物，A忘记带手机与现金，由B付了两人的购物款1000元（包括A的购物款500元）。于是B说，记到白板上吧，月底再一起付给我。所以，A在客厅的白板上记下：</p>
+<pre><code>A需要付500元给B
+</code></pre><p>类似的，白板记录的后方又添加了如下的一些记录：</p>
+<pre><code>A需要付300元给C
+C需要付200元给A
+E需要付100元给B
+B需要付400元给D
+</code></pre><p>谁都可以在白板上留下记录，但是有一天D的朋友来访，为了恶作剧，在客厅的白板上添加了一条记录：</p>
+<pre><code>A需要付50元给D
+</code></pre><p>幸亏A发现了这是一条虚假的记录，否则在月底，A就需要无缘无故的付给D多余的50元。为了防止类似的事情在此发生，记账的时候，每一条记录付款的一方需要在记录后方签名表示确认该条记录的真实性。<br>如下所示：（X’s signature表示该人的签名）</p>
+<pre><code>A需要付500元给B - A&#39;s signature
+A需要付300元给C - A&#39;s signature
+C需要付200元给A - C&#39;s signature
+E需要付100元给B - E&#39;s signature
+B需要付400元给D - B&#39;s signature
+......
+</code></pre><p>后面记录太多了，白板上已经记录不下了，于是他们决定使用计算机进行记账。但是在计算机上就不在能够使用手写的签名，一是在计算机上不方便进行手写，二是手写的签名在计算机上能够轻易的被复制伪造。所以在计算机上的签名应当是针对于计算机的数字签名。</p>
+<p><strong>数字签名</strong>与<strong>手写签名</strong>一样要满足<strong>对应性</strong>的要求，也就是说，每个数字签名只能用作于与其对应的数字记录，不能用作于其他记录。<br>例如：</p>
+<pre><code>A需要付500元给B - signature1
+A需要付300元给C - signature2
+C需要付200元给A - signature3
+E需要付100元给B - signature4
+B需要付400元给D - signature5
+......
+</code></pre><p><strong>A需要付500元给B</strong>的数字签名<strong>signature1</strong>不能用作于<strong>A需要付300元给C</strong>的数字签名。虽然这两条付款记录的付款者都是A，但是付款的内容不一样，数字签名必须与内容严格对应，如果原来的内容发生了改变，则对应的数字签名应当失效。例如将<strong>A需要付500元给B</strong>改为<strong>A需要付501元给B</strong>，则对应的<strong>signature1</strong>应当失效。</p>
+<p>数字签名一般采用哈希(hash)算法，哈希算法的实现有很多种，由于有部分哈希算法有缺陷，所以采用了SHA256的方式，在目前公开的资料上，还没有资料显示SHA256有缺陷。</p>
+<p>SHA意思是安全哈希算法(Secure Hash Algorithm),256表示无论输入什么值，这个算法的计算结果都是一个包含256位数的二进制数。如果把<strong>A需要付500元给B</strong>输入SHA256函数，那么应该得到的结果转换为16进制应该为：</p>
+<pre><code>SHA256(&quot;A需要付500元给B&quot;)=
+833FC5A65F2A515DE43D05438D318B1E7E398C49653391BD313A3933BC4D17D4
+</code></pre><p>如果改动一个字或者多加一个空格或者标点，对应得到的结果如下：</p>
+<pre><code>SHA256(&quot;A需要付510元给B&quot;)
+=bf246871d12a9ebe43622e5ddb6d595e3edaf24bf471e6ad1361a4e7320dd151
+
+SHA256(&quot;A需要付500元给B &quot;)
+=ba6750c7334f356a0525497a611f7e22af43e7808888be5fc0146e67f2c0d85e
+
+SHA256(&quot;A需要付500元给B.&quot;)
+=4e51b5dd3e7401ff05d4d27f83a34057140a3123af53e5961f9c50af700b235b
+</code></pre><p>可以看到只要发生了任何改动即使是微小的改动，结算的结果也将完全不同，另外需要注意的是，只要该条记录的内容不变，通过SHA256得到的计算结果总是一致的。</p>
+<p>SHA256函数有很多在线工具可以生成，详情可以参考：<a href="https://1024tools.com/hash" target="_blank" rel="external">Hash在线计算</a></p>
+<p>使用SHA256的计算结果作为每条记录的签名可以保证签名与记录的内容完全对应，但是，这还不够，因为数字签名与手写签名一样，除了需要满足<strong>对应性</strong>的要求，还需要满足<strong>可鉴别</strong>的要求。</p>
+<p><strong>可鉴别</strong>指的是，对于任何一个签名，比如<strong>B需要付400元给D</strong>对应的签名中必须能够判断这是B的签名而不是D或者其他人的签名。而SHA256是一个公开的函数，无论谁输入<strong>B需要付400元给D</strong>都可以得到相同的结果，那么如何使得数字签名拥有可鉴别的属性呢？于是他们想出了一个方法：采用<strong>非对称加密</strong>对SHA256的计算结果进行加密，把加密之后的结果作为每条记录的签名。</p>
+<h2 id="三-了解什么是加密"><a href="#三-了解什么是加密" class="headerlink" title="三.了解什么是加密"></a>三.了解什么是加密</h2><p>很多人喜欢用<strong>123456</strong>作为他个人的某些账号的密码，将每个数字加上2得到<strong>345678</strong>，这就是一种最简单的加密。而解密则是一个相反的过程，将加密后的结果每个数字减2就可以得到加密前的结果。加密和解密都用到的数字2称作为密钥，加密和解密可以理解为一个计算过程，而密钥则作为计算过程中的一个参数。计算机将需要加密的内容和参数一起输入到加密的算式中，就得到加密后的结果。由于加密和解密使用的是相同的密钥，这种加密方法称作为<strong>对称加密</strong>。</p>
+<p>而在<strong>非对称加密</strong>中，加密和解密使用的是不同的密钥，如下所示：<br><img src="https://i.loli.net/2018/02/13/5a829a65513ee.png" alt=""><br>加密时用到的密钥称为私钥，私钥不能公开，只能加密方自己知道，解密时用到的密钥成为公钥，公钥可以将加密后的内容解密得到加密前的结果。公钥是将私钥输入某个算式计算得出的，通过私钥可以计算出公钥，但是通过公钥不能计算出私钥。<br><img src="https://i.loli.net/2018/02/13/5a829c4e21c33.png" alt=""></p>
+<p>接下来看看使用非对称加密是如何使得签名变得可鉴别：</p>
+<ol>
+<li>将<strong>A需要付500元给B</strong>输入SHA256函数，其中<strong>A需要付500元给B</strong>称为<strong>原始记录</strong>，将原始记录输入函数得到的值称为哈希值，也就是：SHA256(“原始记录”)=哈希值。</li>
+<li>A使用他个人的私钥对哈希值进行加密得到加密后的哈希值。加密后的哈希值就是A对于这条记录的签名。其中，私钥可以是一个包含256位的2进制数，对其加密可以理解为，将私钥和需要加密的内容输入某一个函数经过复杂的计算得到一个数值的过程。</li>
+<li>A将这条记录、加密后的签名以及公钥公布出来，这样任何人都能够通过A的公钥对A的签名进行验证。<br>验证过程如下：<br><img src="https://i.loli.net/2018/02/13/5a82a157e4e89.png" alt=""><br>如果哈希值1=哈希值2，则可以认为：</li>
+<li>这个签名是针对这条记录的，因为如果是不同的交易记录，则通过解密后得到的哈希值1不会等于通过将原始记录进行SHA256计算得到的哈希值2。</li>
+<li>这个签名是A的，因为如果不是A的签名，则无法通过A提供的公钥进行解密得到哈希值1。</li>
+<li>接受到的记录与原始记录相同，没有被篡改，证明：</li>
+</ol>
+<p><strong>Because:</strong></p>
+<p>SHA256(“原始记录”)=哈希值</p>
+<p>解密(加密后的哈希值)=哈希值1</p>
+<p>SHA256(“接收的记录”)=哈希值2</p>
+<p>哈希值=哈希值1</p>
+<p>哈希值1=哈希值2</p>
+<p><strong>Result:</strong></p>
+<p>哈希值=哈希值2</p>
+<p>原始记录=接收的记录</p>
+<p><strong>类似</strong>的，付款方将其交易记录放入SHA256函数进行计算得到哈希值，然后使用自己的私钥对哈希值进行加密，其他人根据记录内容，付款方的公钥就可以判断这个签名<strong>是否对应于内容</strong>，<strong>是否是付款方的签名</strong>，现在这个账本可以正常运作起来，但是还是有很多的漏洞，只适用于小范围的使用。</p>
+<h2 id="四-关于Bitcoin"><a href="#四-关于Bitcoin" class="headerlink" title="四.关于Bitcoin"></a>四.关于Bitcoin</h2><blockquote>
+<p>Bitcoin: A Peer-to-Peer Electronic Cash System<br>Satoshi Nakamoto<br>satoshin@gmx.com www.bitcoin.org</p>
+<p>A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going through a financial institution. Digital signatures provide part of the solution, but the main benefits are lost if a trusted third party is still required to prevent double-spending. We propose a solution to the double-spending problem using a peer-to-peer network. The network timestamps transactions by hashing them into an ongoing chain of hash-based proof-of-work, forming a record that cannot be changed without redoing the proof-of-work. The longest chain not only serves as proof of the sequence of events witnessed, but proof that it came from the largest pool of CPU power. As long as a majority of CPU power is controlled by nodes that are not cooperating to attack the network, they’ll generate the longest chain and outpace attackers. The network itself requires minimal structure. Messages are broadcast on a best effort basis, and nodes can leave and rejoin the network at will, accepting the longest proof-of-work chain as proof of what happened while they were gone.</p>
+</blockquote>
+<p>2008年11月，网络上出现了一篇署名为中本聪（Satoshi Nakamoto）的文章，其标题翻译为：比特币，一种对等式电子现金系统。这篇文章描述了如何使用点对点网络(peer-to-peer network)来构建一种记账式电子交易系统，2009年1月，比特币正式上线，出现了比特币钱包等客户端软件，人们可以使用比特币钱包进行转账和接收比特币。所以，我们可以基于前面的案例中的简易的电子记账本，进行相应的改进，就可以得到一个简单版的比特币交易系统。</p>
+<h2 id="五-改进记账系统"><a href="#五-改进记账系统" class="headerlink" title="五.改进记账系统"></a>五.改进记账系统</h2><ol>
+<li>将元改为BTC，将需要付改为支付，改进之后，只要发出这个消息，自己的签名以及自己的公钥，付款方的账户就要减去X个BTC，收款方账户上将增加X个BTC，这要做的目的就是为了防止月底找不到人。<pre><code>修改之前：
+A需要付500元给B - 使用私钥加密后的签名1
+A需要付300元给C - 使用私钥加密后的签名2
+C需要付200元给A - 使用私钥加密后的签名3
+E需要付100元给B - 使用私钥加密后的签名4
+B需要付400元给D - 使用私钥加密后的签名5
+......
+修改之后：
+A支付500BTC给B - 使用私钥加密后的签名1
+A支付300BTC给C - 使用私钥加密后的签名2
+C支付200BTC给A - 使用私钥加密后的签名3
+E支付100BTC给B - 使用私钥加密后的签名4
+B支付400BTC给D - 使用私钥加密后的签名5
+......
+</code></pre></li>
+<li>需要有一种方法能够确认付款方是否有足量的比特币进行支付，付款方有足够的BTC支付，才能确认这笔交易。银行等金融机构能够通过中心化的清算系统非常方便的查询账户余额，但是中本聪设计比特币交易系统的初衷就是消除交易对于银行等金融机构的依赖，一方面是银行等金融机构会在交易之中收取较高的手续费，二是银行等金融机构也会有倒闭破产的风险，在遇到严重的金融危机时，不能保证交易的正常进行。如果像银行一样引入一个专门的系统记录账户的余额，相当于建立了一个中央管理机构，这不符合中本聪去中心化的目标，注意，中本聪论文标题中的Peer-to-Peer表明比特币网络中的所有节点的地位都是对等的，都能履行相同的职责，不存在谁优先于谁，也就是不存在一个管理机构来管理这些节点。那么如何确认付款方有足够的BTC？<strong>比特币网络的解决方案是：每笔交易都必须以之前的交易作为基础。</strong><br>比如有以下交易记录：</li>
+</ol>
+<pre><code>(1)A支付500BTC给B - 使用私钥加密后的签名1
+(2)A支付300BTC给C - 使用私钥加密后的签名2
+(3)B支付200BTC给D - 使用私钥加密后的签名3
+</code></pre><p>交易(3)成功的前提是，在这笔交易之前，必须有人支付给B大于或者等于200BTC，且这部分BTC没有被使用过，在上面的记录中，由于在(3)之前，有这么一条记录<strong>(1)A支付500BTC给B</strong>,所以(3)符合要求，相应的支付消息改为：<strong>A支付500BTC给B -&gt; 支付200BTC给D</strong>。支付时，A将这条支付消息，A的针对这条支付消息的数字签名，A的公钥一起发给B，B收到这条支付消息后，发现这条消息中的前一个数额为500BTC，后一个数额为200BTC，前一个数额称为这笔交易的输入值，后一个数额称为这笔交易的输出值，输入值&gt;=输出值，则可以确认A有足量的比特币进行支付，之后，将这条支付消息输入SHA256函数获得哈希值1，并用公钥对A的数字签名进行解密得到哈希值2，哈希值1=哈希值2，则B可以确认，A的签名有效，支付成功。</p>
+<p>以上有两点需要注意:<br>(1). 如果<strong>A支付100BTC给B，B支付200BTC给D</strong>，也就是<strong>输入值&lt;输出值</strong>，这时，B需要添加一条支付给B的支付消息，例如:假设之前有这样一条记录<strong>C支付100BTC给B</strong>，则相应的支付消息改为：<strong>C支付100BTC给B+A支付100BTC给B-&gt;支付200BTC给D</strong>。<br>(2). 如果<strong>C支付100BTC给B+A支付100BTC给B-&gt;支付150BTC给D</strong>，100+100&gt;150，也就是<strong>输入值&gt;输出值</strong>，这样该如何处理？比特币网络中将付款方将支付后剩余的金额作为找零支付给自己，也就是说，上面的支付消息应该改为<strong>C支付100BTC给B+A支付100BTC给B-&gt;支付150BTC给D+支付50BTC给B</strong>，先前的交易记录用作转账时，则是把交易记录中的金额一次性用光，因为<strong>单笔交易记录作为一个整体，不可拆分</strong>。</p>
+<ol>
+<li>交易双方使用账号进行交易，由于现实中重名的人很多，所以交易双方账号的唯一性也在考虑之中。账号是通过将该人的公钥输入某个函数计算得到，账号一般是包括34个字符的字符串比如：18P7XkKt2kVtqgdFR1hcKsgoLmqyT3TEE2。</li>
+</ol>
+<p>在<a href="https://blockexplorer.com" target="_blank" rel="external">blockexplorer</a>中我们可以查看到所有的比特币交易，比如：<br><a href="https://i.loli.net/2018/02/14/5a83a490b6e08.png" target="_blank" rel="external"><img src="https://i.loli.net/2018/02/14/5a83a490b6e08.png" alt=""></a><br>解释：<br>图中左侧是付款方的账号，右边是收款方的账号，黄色高亮部分下方的交易记录表示账号<strong>1fo9tQdsb5QmU8hx2Pw8mMNqdp2CH9SVy</strong>收到一笔BTC转账交易，因为有这笔转账交易作为基础，后来才能将BTC转账给他人，也就是上方黄色高亮部分的交易记录。</p>
+<p>5.关于转账记录的存储与维护，比特笔交易的记录不能只存在一台计算机上，因为每一条记录都代表资金，如果只存储在一台计算机上，该计算机出现故障，则整个系统将不能正常的运行。所以需要存放在多台计算机上，而这些计算机的由谁来管理和维护？由一个人或者专门的管理机构进行管理吗？但是谁能保证在巨大的诱惑或者巨大的威胁之下不对这些记录进行篡改呢。</p>
+<p>比特币网络的解决方案是，每条比特币交易记录都要发送到网络上，让所有运行比特币客户端的计算机存储所有的比特币转账记录，这样，每一条记录都有很多计算机存储，不用担心记录缺失。但是，这样会出现三个一致性方面的问题。</p>
+<p>第一个问题是：如何进行同步，有的计算机有时候没有联网，没有运行比特币客户端或者有时候处于关机状态，它们将收不到比特币网络发送的转账记录，这样不同计算机上的记录不一致，到底以哪一台计算为主，他们该如何记性同步？</p>
+<p>第二个问题是：某个黑客可能会篡改一些计算机上的某一条或者多条交易记录，导致比特币交易记录不一致，甚至记录之间前后矛盾，从而使得比特币网络不能正常的运行，那么如何防止黑客的篡改？</p>
+<p>第三个问题是：如何防止同一笔比特币收入被重复使用，比如有以下两条支付消息：<br>(1).A支付500BTC给B -&gt; 支付200BTC给D<br>(2).A支付500BTC给B -&gt; 支付200BTC给C</p>
+<p>这两条消息几乎是同时发出，因为在网络上，消息传播时经过的路径不同，这样就会导致在网络上有的计算机先收到消息(1)，有的计算机先收到消息（2），而先收到消息（1）的则认为消息（2）中的<strong>A支付500BTC给B</strong>是无效的，因为该条记录在消息（1）中已经使用过。这样不同计算机对同一条记录的有效性产生分歧，如果通过银行进行交易，则可以很容易解决这个问题。但是比特币系统的目的是为了消除对银行等金融系统的依赖，那么，如何解决这三个一致性的问题？</p>
+<h2 id="六-区块链"><a href="#六-区块链" class="headerlink" title="六.区块链"></a>六.区块链</h2><p>比特币利用区块链解决这三个一致性方面的问题，所谓区块链，是由一个个区块串联而成，区块中存储的是检查校验之后的交易记录，比特币网络仅仅认可和维护同一条区块链，也就是说，比特币网络上的所有节点，都存储着完全相同的一条区块链。<br><a href="https://i.loli.net/2018/02/14/5a83c8e31cbdd.png" target="_blank" rel="external"><img src="https://i.loli.net/2018/02/14/5a83c8e31cbdd.png" alt=""></a></p>
+<p>当新的交易记录放入新生成的区块，而且这个新生成的区块添加到区块链上后，这些新的交易记录才被比特币网络认可(Confirmed Transactions)，过程如下图。<br><a href="https://i.loli.net/2018/02/14/5a83ca3226c34.png" target="_blank" rel="external"><img src="https://i.loli.net/2018/02/14/5a83ca3226c34.png" alt=""></a></p>
+<p>新区块由比特币网络上称作矿工的节点生成，矿工接收发送到比特币网络上的交易记录，逐个检查交易记录是否符合要求，比如检查对应交易的数字签名，每条交易的输入输出值等，接着，将符合要求的交易记录添加到自己正在制作的新区块中，当矿工成功制作好新区块，就将这个区块发送给网络上的各个节点，网络上的节点接收到区块后，检查这个新区块是否符合要求，如果符合要求，则将这个区块添加到该节点存储的区块链的末尾。这时，问题来了，比特币网络上有许许多多的矿工，每个矿工都能生成新的区块，所以在统一时间内可以生成许多新区块，假设这些新区块都不相同，但又是符合要求的，比特币网络只维护和认可一条区块链，比特币网络上的所有节点必须选择同一个区块并添加到区块链的末尾，但是很难制定一个选择的标准，至少不能根据时间的先后进行选择，因为节点分布在世界各地，需要考虑到网络的延迟，每个节点接收到的第一个新区块一般不同。</p>
+<p>所以比特币网络采用一个巧妙的方法限制单位时间内生成的新区块的数量，如果每隔十分钟左右的时间，整个比特币网络只有一个矿工能够将其制作的一个新区块发布到网络上，就不需要进行选择，所有的节点将这个唯一的区块添加区块链上，这样可以保证所有的节点保存的区块链始终相同，这个巧妙的方法就是：当矿工把检查好的交易记录填入新区块时，还要求矿工做一个<strong>额外的工作</strong>，矿工成功的完成这个额外的工作后，才能将新生成的区块发布到比特币网络上。这个额外的工作，整个比特币网络上一般只有一个矿工能在10分钟左右的时间成功完成一次，这样，每隔10分钟左右的时间，只有一个矿工能将其制作的区块发布到比特币网络上。</p>
+<p>这个<strong>额外的工作</strong>包含两部分：<br>第一部分：将新制作的区块所包含的内容（前一个区块的SHA256函数值+新区块的基本信息+新区块包含的所有交易记录）组合成一个<strong>字符串</strong>，每一个区块的SHA256函数值与其一一对应，区块的SHA256函数值就代表这个区块，如果第Y个区块包含第X个区块的SHA256函数值，则表示第Y个区块的前一个区块是第X个区块…<br><img src="https://i.loli.net/2018/02/14/5a83d15a7fee7.png" alt=""><br>区块链中，每一个区块都包含前一个区块所有内容的SHA256函数值，区块链就是靠各个区块的SHA256函数值将这些区块有序的串联而成。</p>
+<p>第二部分：将第一部分得到的<strong>字符串</strong>，在这个字符串的末尾添加一个随机数，组合成一个<strong>新字符串</strong>。</p>
+<pre><code>新字符串=前一个区块的SHA256函数值+新区块的基本信息+新区块包含的所有交易记录+随机数
+
+Example:
+SHA256(新字符串)=0101101100011001100110011010101101011011000110011001100110101011010110110001100110011001101010110101101100011001100110011010101100110011010101101011011001000011010110110001100110011001101010110101101100011001100110011010101101011011000110011001100110101011
+</code></pre><p>将这个新字符串输入SHA256函数，得到一个包含256位的二进制数，假如这个二进制数的前73位全是0，才算成功完成了这个额外的工作。这个额外工作的难度非常高，高到整个比特币网络中平均没十分钟只有一个矿工能够完成，因为SHA256函数每个输入值都对应一个输出值，而且每个输出值都是一个256位的二进制数，但每次运算的输出值到底是什么都是随机的，无法预测，所以，找到符合要求的随机数的唯一方法就是以最快的速度输入不同的随机数不停的试，所以假设要找到这样一个使得二进制数的前73位全是0的随机数，概率为1/(2^73)，也就是平均需要进行2^73次SHA256计算，才能找到一个符合要求的随机数。当某个矿工找个这个随机数后，将随机数添加到新区块中，并把新区块发布到比特币网络上，网络上的所有节点收到这个区块后，将这个区块按照前面的规则组成新字符串，将这个新字符串输入SHA256函数，检查二进制数是否符合要求，如果符合要求后，再检查这个区块是否符合要求，交易记录是否符合要求等，如果一切都没有问题后，就将这个区块添加到该节点存储的区块链的末尾，因为只有一个新区块，所以避免了从很多区块中选择一个。</p>
+<p>找到这个随机数纯粹靠运气，但矿工的运算能力越强，则运气越好，进行SHA256函数计算的速度越快，单位时间能够试算的随机数越多，就越可能最快的找到这个随机数，这个过程就是挖矿。挖矿比拼的就是设备的运算速度，为了运算速度，矿工不断升级自己的挖矿设备，最初使用的PC每秒大概能够进行60万次SHA256函数运算，之后使用安装有多个专业显卡的计算机，每秒能进行数亿次SHA256函数运算，显卡进行SHA256运算的速度大大超过CPU进行SHA256函数运算的速度，而现在使用专业的矿机每秒大概能够进行十万亿次的SHA256函数运算，而矿工会购买许多矿机组合进行挖矿，那么为什么矿工会购买这么多矿机？那是因为比特币网络对于矿工的奖励机制，矿工每制作一个新区块并发布到比特币网络上，矿工则会得到来自比特币网络12.5BTC（2017年），除此之外，这个区块的所有交易记录的所有交易费用也归这个矿工所有，2017年每个区块的交易费大约为2BTC，所以在2017年，每成功制作一个新区块，矿工将收入14.5BTC约为1,700,000CNY(2017年)。巨大的经济利益大大刺激了挖矿设备的发展，挖矿设备的升级使得整个网络的运算能力提高，运算能力的提高使得生成一个区块的速度可能不再需要十分钟，所以比特币网络为了维持平均每10分钟生成一个区块的速度，每两周调整一次工作难度，比如要求前74位全是0从而增加工作难度。</p>
+<p>那么有没有可能两个矿工同时格子找到一个符合要求的随机数并且制作了一个新区块？答：可能，而且经常发生。对于这种情况，比特币网络是这样处理的，对于这两个区块，比特币网络选择将这连个区块都保留下来，并将这两个区块都添加到区块链的末尾，从而区块链出现了分叉，形成了两个支链，矿工也会保存这两个新区块，但是，在制作下一个区块时，矿工都是在自己先接收到的区块基础上，创建新区块，所以有的矿工先接收到区块1，有的矿工先接收到区块2，这样有的矿工就在区块1的基础上制作新区块，有的矿工在区块2的基础上制作新区块，如果新区块基于区块1制作，接收到新区块的节点将会放弃区块2，也就是说，区块链分叉，出现支链的话，网络上的所有节点只认可最长的那条支链，保证了区块链的唯一性。如果支链的基础上又同时出现分叉，那么较短的支链将被放弃，被放弃的支链上区块上的所有交易记录如果没有添加到主链上，则会被重新认定为未确认交易，等待重新加入到新区块中。比特币交易中，记录加入的区块有可能是支链上的区块，如果该支链不能变成主链，交易很有可能变成未确认交易，重新等待确认，所以，在交易记录所在的区块后方又添加了若干个区块后，才可以确认自己的交易记录真正的得到了比特币网络的认可。那么若干个到底是几个？对于小额交易而言，一般是1~2个，大额交易一般为3~6个。</p>
+<h3 id="现在，看区块链如何解决上面提到过的三个一致性的问题。"><a href="#现在，看区块链如何解决上面提到过的三个一致性的问题。" class="headerlink" title="现在，看区块链如何解决上面提到过的三个一致性的问题。"></a><strong>现在，看区块链如何解决上面提到过的三个一致性的问题。</strong></h3><h3 id="一、如何进行同步"><a href="#一、如何进行同步" class="headerlink" title="一、如何进行同步"></a>一、如何进行同步</h3><p>所有的比特币客户端连接到网络上后会自动向周围的网络请求自己所没有的区块，<strong>检查无误</strong>后将区块逐一添加到自己存储的区块链上。</p>
+<h3 id="二、如何防止记录被篡改"><a href="#二、如何防止记录被篡改" class="headerlink" title="二、如何防止记录被篡改"></a>二、如何防止记录被篡改</h3><p>当交易记录输入到区块中，且区块被加入到区块链中，则区块中的任何记录都不能被修改，对于区块的任何修改，都会改变这个区块的SHA256函数值，导致后面一个区块所包含的SHA256函数值与这个区块修改后的SHA256函数值不一致，使得这条区块链断链，这条区块链也就不再是比特币网络上最长的一条区块链，将不被认可和维护。那么篡改这有没有可能自己不断制作新区块并添加在断裂的区块链上使之成为最长的区块链？答：因为制作新区块需要完成难度很高的额外工作，只有篡改者所拥有的计算能力超过整个网络中其他节点的计算能力总和时，篡改者所制作的区块链的生长速度才可能超过现有的完整区块链的生长速度从而成为主链，这种可能性在矿工的不断加入以及矿工的运算能力越来越强的情况下微乎其微。所以，只要交易记录添加到区块中，并且区块在主链上，则这条交易记录就无法被篡改。而对于大宗交易，一般认定为在所在区块后添加了3~6个新区块，就可以放心的认定该笔交易得到了比特币网络的确认，无法修改或撤销。</p>
+<h3 id="三、如果防止同一笔BTC收入被重复使用"><a href="#三、如果防止同一笔BTC收入被重复使用" class="headerlink" title="三、如果防止同一笔BTC收入被重复使用"></a>三、如果防止同一笔BTC收入被重复使用</h3><p>矿工制作新区块时，会检查放入新区块的每条交易记录的输入值是否在前面的区块所包含的交易记录中使用过，如果被使用过，则认为这条交易记录无效，不会放入新区块中。如果两条交易记录的输入值相同，则矿工只会认定其中的一笔交易记录有效，并只将其加入到新区块中，而只有放入到区块中的交易记录才是被比特币网络所认可的交易记录，才是被确认的交易记录，从而防止同一笔BTC转账收入被重复转账给他人。</p>
+<p><strong>以上所有内容就是比特币以及区块链技术的简易应用.</strong><br><strong>Thanks for your reading!</strong></p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2018/03/09/BlockChain/数字货币钱包基础/cjekx2ttb0002pw7ks0yp1n9g/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/03/03/网络/shadowsock-tor实现匿名访问/cjekx2tty000dpw7klayrl1rg/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="JC's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        pofy_jerry@hotmail.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="#" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/10/">十月 2017<span class="sidebar_archives-count">5</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/BlockChain/">BlockChain<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/HEXO/">HEXO<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Java/">Java<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Spring/">Spring<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/网络/">网络<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/计算机基础/">计算机基础<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/tags" title="标签云">
+                
+                    <i class="material-icons sidebar-material-icons">cloud_circle</i>
+                
+                标签云
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/timeline" title="时间轴">
+                
+                    <i class="material-icons sidebar-material-icons">playlist_play</i>
+                
+                时间轴
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">8</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+        <a href="http://weibo.com/pofycn" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-weibo">
+                <span class="visuallyhidden">Weibo</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/pofycn" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+    
+    <!-- V2EX -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;2017&nbsp;-<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>POFY's Blog
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+    
+        <script>lsloader.load("sm_js","/js/smoothscroll.js?tNQK2Tw2SUL8a1Scn/Mgew==", true)</script>
+    
+
+
+
+
+
+
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?5+2z7ZZmFuZK5IcimlZbxw==", true)</script>
+    
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+        
+            HanabiBrowser.clearColors();
+        
+        
+        HanabiBrowser.start('pre code',false);
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.0 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
