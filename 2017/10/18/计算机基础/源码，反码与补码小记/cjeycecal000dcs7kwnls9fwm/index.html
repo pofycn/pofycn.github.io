@@ -37,7 +37,7 @@
     
     <title>
         
-            HEXO Meterial TimeLine &amp; Tags Cloud Configuration | 
+            原码，反码与补码小记 | 
         
         POFY&#39;s Blog
     </title>
@@ -49,7 +49,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="JC">
     <meta name="description" itemprop="description" content="猫毒晚期程序猿.">
-    <meta name="keywords" content=",HEXO">
+    <meta name="keywords" content="">
 
     <!-- Import lsloader -->
     <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(key){try{localStorage.removeItem(key)}catch(e){}};lsloader.setLS=function(key,val){try{localStorage.setItem(key,val)}catch(e){}};lsloader.getLS=function(key){var val="";try{val=localStorage.getItem(key)}catch(e){val=""}return val};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var keys=[];for(var i=0;i<localStorage.length;i++){keys.push(localStorage.key(i))}keys.forEach(function(key){var data=lsloader.getLS(key);if(window.oldVersion){var remove=window.oldVersion.reduce(function(p,c){return p||data.indexOf("/*"+c+"*/")!==-1},false);if(remove){lsloader.removeLS(key)}}})}catch(e){}};lsloader.clean();lsloader.load=function(jsname,jspath,cssonload,isJs){if(typeof cssonload==="boolean"){isJs=cssonload;cssonload=undefined}isJs=isJs||false;cssonload=cssonload||function(){};var code;code=this.getLS(jsname);if(code&&code.indexOf(versionString)===-1){this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}if(code){var versionNumber=code.split(versionString)[0];if(versionNumber!=jspath){console.log("reload:"+jspath);this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}code=code.split(versionString)[1];if(isJs){this.jsRunSequence.push({name:jsname,code:code});this.runjs(jspath,jsname,code)}else{document.getElementById(jsname).appendChild(document.createTextNode(code));cssonload()}}else{this.requestResource(jsname,jspath,cssonload,isJs)}};lsloader.requestResource=function(name,path,cssonload,isJs){var that=this;if(isJs){this.iojs(path,name,function(path,name,code){that.setLS(name,path+versionString+code);that.runjs(path,name,code)})}else{this.iocss(path,name,function(code){document.getElementById(name).appendChild(document.createTextNode(code));that.setLS(name,path+versionString+code)},cssonload)}};lsloader.iojs=function(path,jsname,callback){var that=this;that.jsRunSequence.push({name:jsname,code:""});try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(path,jsname,xhr.response);return}}that.jsfallback(path,jsname)}};xhr.send(null)}catch(e){that.jsfallback(path,jsname)}};lsloader.iocss=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.iofonts=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.runjs=function(path,name,code){if(!!name&&!!code){for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code=code}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var script=document.createElement("script");script.appendChild(document.createTextNode(this.jsRunSequence[0].code));script.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(script);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var that=this;var script=document.createElement("script");script.src=this.jsRunSequence[0].path;script.type="text/javascript";this.jsRunSequence[0].status="loading";script.onload=function(){that.jsRunSequence.shift();if(that.jsRunSequence.length>0){that.runjs()}};document.body.appendChild(script)}};lsloader.tagLoad=function(path,name){this.jsRunSequence.push({name:name,code:"",path:path,status:"failed"});this.runjs()};lsloader.jsfallback=function(path,name){if(!!this.jsnamemap[name]){return}else{this.jsnamemap[name]=name}for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code="";this.jsRunSequence[k].status="failed";this.jsRunSequence[k].path=path}}this.runjs()};lsloader.cssfallback=function(path,name,cssonload){if(!!this.cssnamemap[name]){return}else{this.cssnamemap[name]=1}var link=document.createElement("link");link.type="text/css";link.href=path;link.rel="stylesheet";link.onload=link.onerror=cssonload;var root=document.getElementsByTagName("script")[0];root.parentNode.insertBefore(link,root)};lsloader.runInlineScript=function(scriptId,codeId){var code=document.getElementById(codeId).innerText;this.jsRunSequence.push({name:scriptId,code:code});this.runjs()};lsloader.loadCombo=function(jslist){var updateList="";var requestingModules={};for(var k in jslist){var LS=this.getLS(jslist[k].name);if(!!LS){var version=LS.split(versionString)[0];var code=LS.split(versionString)[1]}else{var version=""}if(version==jslist[k].path){this.jsRunSequence.push({name:jslist[k].name,code:code,path:jslist[k].path})}else{this.jsRunSequence.push({name:jslist[k].name,code:null,path:jslist[k].path,status:"comboloading"});requestingModules[jslist[k].name]=true;updateList+=(updateList==""?"":";")+jslist[k].path}}var that=this;if(!!updateList){var xhr=new XMLHttpRequest;xhr.open("get",combo+updateList,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){that.runCombo(xhr.response,requestingModules);return}}else{for(var i in that.jsRunSequence){if(requestingModules[that.jsRunSequence[i].name]){that.jsRunSequence[i].status="failed"}}that.runjs()}}};xhr.send(null)}this.runjs()};lsloader.runCombo=function(comboCode,requestingModules){comboCode=comboCode.split("/*combojs*/");comboCode.shift();for(var k in this.jsRunSequence){if(!!requestingModules[this.jsRunSequence[k].name]&&!!comboCode[0]){this.jsRunSequence[k].status="comboJS";this.jsRunSequence[k].code=comboCode[0];this.setLS(this.jsRunSequence[k].name,this.jsRunSequence[k].path+versionString+comboCode[0]);comboCode.shift()}}this.runjs()}})();</script>
@@ -231,18 +231,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://yoursite.com">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="HEXO Meterial TimeLine &amp; Tags Cloud Configuration | POFY&#39;s Blog">
+    <meta property="og:title" content="原码，反码与补码小记 | POFY&#39;s Blog">
     <meta property="og:image" content="http://yoursite.com/img/favicon.png" />
     <meta property="og:description" content="猫毒晚期程序猿.">
-    <meta property="og:article:tag" content="HEXO"> 
+    
 
     
-        <meta property="article:published_time" content="Sun Oct 15 2017 15:46:32 GMT+0800" />
-        <meta property="article:modified_time" content="Sun Oct 15 2017 16:49:48 GMT+0800" />
+        <meta property="article:published_time" content="Wed Oct 18 2017 23:11:12 GMT+0800" />
+        <meta property="article:modified_time" content="Sat Mar 10 2018 13:15:29 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="HEXO Meterial TimeLine &amp; Tags Cloud Configuration | POFY&#39;s Blog">
+    <meta name="twitter:title" content="原码，反码与补码小记 | POFY&#39;s Blog">
     <meta name="twitter:description" content="猫毒晚期程序猿.">
     <meta name="twitter:image" content="http://yoursite.com/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -250,7 +250,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/2017/10/15/HEXO/HEXO-Meterial-TimeLine-Tags-Cloud-Configuration/cjeuwwfxd0002bg7kyvh27y32/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2017/10/18/计算机基础/源码，反码与补码小记/cjeycecal000dcs7kwnls9fwm/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -262,10 +262,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "http://yoursite.com/2017/10/15/HEXO/HEXO-Meterial-TimeLine-Tags-Cloud-Configuration/cjeuwwfxd0002bg7kyvh27y32/index.html",
-    "headline": "HEXO Meterial TimeLine & Tags Cloud Configuration",
-    "datePublished": "Sun Oct 15 2017 15:46:32 GMT+0800",
-    "dateModified": "Sun Oct 15 2017 16:49:48 GMT+0800",
+    "mainEntityOfPage": "http://yoursite.com/2017/10/18/计算机基础/源码，反码与补码小记/cjeycecal000dcs7kwnls9fwm/index.html",
+    "headline": "原码，反码与补码小记",
+    "datePublished": "Wed Oct 18 2017 23:11:12 GMT+0800",
+    "dateModified": "Sat Mar 10 2018 13:15:29 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "JC",
@@ -283,7 +283,7 @@
             "url": "/img/favicon.png"
         }
     },
-    "keywords": ",HEXO",
+    "keywords": "",
     "description": "猫毒晚期程序猿.",
 }
 </script>
@@ -349,7 +349,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#HEXO-Meterial中标签云以及时间轴的相关配置"><span class="post-toc-number">1.</span> <span class="post-toc-text">HEXO Meterial中标签云以及时间轴的相关配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#First"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">First</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Second"><span class="post-toc-number">1.0.2.</span> <span class="post-toc-text">Second</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Third"><span class="post-toc-number">1.0.3.</span> <span class="post-toc-text">Third</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Last"><span class="post-toc-number">1.0.4.</span> <span class="post-toc-text">Last</span></a></li></ol></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#关于原码、反码与补码的个人理解与相互联系"><span class="post-toc-number">1.</span> <span class="post-toc-text">关于原码、反码与补码的个人理解与相互联系</span></a></li></ol>
     </ul>
     
 
@@ -381,7 +381,7 @@
         
     
             <p class="article-headline-p">
-                HEXO Meterial TimeLine & Tags Cloud Configuration
+                原码，反码与补码小记
             </p>
         </div>
 
@@ -400,7 +400,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>JC</strong>
-        <span>10月 15, 2017</span>
+        <span>10月 18, 2017</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -418,15 +418,6 @@
 
     <!-- Tags (bookmark) -->
     
-    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-        <i class="material-icons" role="presentation">bookmark</i>
-        <span class="visuallyhidden">bookmark</span>
-    </button>
-    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
-        <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/HEXO/">HEXO</a>
-    </ul>
-    
 
     <!-- Share -->
     
@@ -441,7 +432,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=HEXO Meterial TimeLine &amp; Tags Cloud Configuration&url=http://yoursite.com/2017/10/15/HEXO/HEXO-Meterial-TimeLine-Tags-Cloud-Configuration/cjeuwwfxd0002bg7kyvh27y32/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=原码，反码与补码小记&url=http://yoursite.com/2017/10/18/计算机基础/源码，反码与补码小记/cjeycecal000dcs7kwnls9fwm/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -450,7 +441,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=HEXO Meterial TimeLine &amp; Tags Cloud Configuration&url=http://yoursite.com/2017/10/15/HEXO/HEXO-Meterial-TimeLine-Tags-Cloud-Configuration/cjeuwwfxd0002bg7kyvh27y32/index.html&via=JC" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=原码，反码与补码小记&url=http://yoursite.com/2017/10/18/计算机基础/源码，反码与补码小记/cjeycecal000dcs7kwnls9fwm/index.html&via=JC" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -459,7 +450,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/10/15/HEXO/HEXO-Meterial-TimeLine-Tags-Cloud-Configuration/cjeuwwfxd0002bg7kyvh27y32/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/10/18/计算机基础/源码，反码与补码小记/cjeycecal000dcs7kwnls9fwm/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -468,7 +459,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2017/10/15/HEXO/HEXO-Meterial-TimeLine-Tags-Cloud-Configuration/cjeuwwfxd0002bg7kyvh27y32/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2017/10/18/计算机基础/源码，反码与补码小记/cjeycecal000dcs7kwnls9fwm/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -480,7 +471,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=POFY&#39;s Blog&title=HEXO Meterial TimeLine &amp; Tags Cloud Configuration&summary=猫毒晚期程序猿.&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2017/10/15/HEXO/HEXO-Meterial-TimeLine-Tags-Cloud-Configuration/cjeuwwfxd0002bg7kyvh27y32/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=POFY&#39;s Blog&title=原码，反码与补码小记&summary=猫毒晚期程序猿.&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2017/10/18/计算机基础/源码，反码与补码小记/cjeycecal000dcs7kwnls9fwm/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -499,43 +490,10 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h2 id="HEXO-Meterial中标签云以及时间轴的相关配置"><a href="#HEXO-Meterial中标签云以及时间轴的相关配置" class="headerlink" title="HEXO Meterial中标签云以及时间轴的相关配置"></a>HEXO Meterial中标签云以及时间轴的相关配置</h2><p><a href="https://material.viosey.com/docs/#/" target="_blank" rel="external">官方文档地址</a></p>
-<p>官方文档中关于标签云以及时间轴入口的相关配置描述不够详细导致我配置该内容的时候在坑里趴了很久，官网中说是要参考独立页面的配置<br><img src="/2017/10/15/HEXO/HEXO-Meterial-TimeLine-Tags-Cloud-Configuration/cjeuwwfxd0002bg7kyvh27y32/1.png" alt="说是要参考独立页面的配置"><br>然而：</p>
-<p><img src="/2017/10/15/HEXO/HEXO-Meterial-TimeLine-Tags-Cloud-Configuration/cjeuwwfxd0002bg7kyvh27y32/2.jpg" alt=""><br><img src="/2017/10/15/HEXO/HEXO-Meterial-TimeLine-Tags-Cloud-Configuration/cjeuwwfxd0002bg7kyvh27y32/2.png" alt="然而Not found"><br>看到这里，我就是这个表情</p>
-<p><img src="/2017/10/15/HEXO/HEXO-Meterial-TimeLine-Tags-Cloud-Configuration/cjeuwwfxd0002bg7kyvh27y32/3.jpg" alt=""></p>
-<p>好吧言归正传，接下来讲解配置标签云以及时间轴：<br>为了方便（懒）我就把两个东西放到一块直接写了吧</p>
-<h4 id="First"><a href="#First" class="headerlink" title="First"></a>First</h4><p>cd至blog的相关目录，然后:</p>
-<pre><code>hexo new page &quot;tags&quot;
-hexo new page &quot;timeline&quot;
-</code></pre><p>执行完以上两条命令后，会在你的blog目录下新建两个文件夹tags和timeline，每个文件夹中都有一个index.md文件。</p>
-<h4 id="Second"><a href="#Second" class="headerlink" title="Second"></a>Second</h4><p>编辑两个文件夹中的index.md文件</p>
-<p>tags中的index.md写入以下内容：<br><pre><code>---
-title: tags(这个标题可以修改)
-date:
-layout: tags(这个布局属性不可修改)
----</code></pre></p>
-<p>timeline中的index.md写入以下内容：<br><pre><code>---
-title: timeline(这个标题可以修改)
-date:
-layout: timeline(这个布局属性不可修改)
----</code></pre></p>
-<h4 id="Third"><a href="#Third" class="headerlink" title="Third"></a>Third</h4><p>这个也是官方文档中没有说清楚的地方，就是添加标签云以及时间轴的入口，这里需要编辑主题的配置文件：<br>在pages中添加以下内容然后保存：<br><pre><code>pages:
-        标签云: 
-            link: &quot;&#x2F;tags&quot;
-            icon: cloud_circle
-            divider: false
-        时间轴: 
-            link: &quot;&#x2F;timeline&quot;
-            icon: playlist_play
-            divider: false</code></pre><br>上面配置中：<br>link：指的是生成页面之后标签云以及时间轴入口的相应链接<br>icon：为其标题之前的图标，相关图标以及其配置内容可以在<a href="https://material.io/icons/" title="Material icons" target="_blank" rel="external">https://material.io/icons/</a>中找到。<br>divider：为是否在两个功能的入口样式中添加分隔的样式</p>
-<h4 id="Last"><a href="#Last" class="headerlink" title="Last"></a>Last</h4><p>以上就完成了该内容的相关配置，输入下面的命令即可完成并在本地预览效果：</p>
-<pre><code>hexo clean
-hexo generate
-hexo server</code></pre>
-<p>不管怎么说，还是觉得真的有点坑</p>
-<p><img src="/2017/10/15/HEXO/HEXO-Meterial-TimeLine-Tags-Cloud-Configuration/cjeuwwfxd0002bg7kyvh27y32/1.jpg" alt=""></p>
-<p>不过不管怎么说还是从坑里爬出来了，嗯，就这样，说完了。</p>
-<p><img src="/2017/10/15/HEXO/HEXO-Meterial-TimeLine-Tags-Cloud-Configuration/cjeuwwfxd0002bg7kyvh27y32/4.jpg" alt=""></p>
+        <h2 id="关于原码、反码与补码的个人理解与相互联系"><a href="#关于原码、反码与补码的个人理解与相互联系" class="headerlink" title="关于原码、反码与补码的个人理解与相互联系"></a>关于原码、反码与补码的个人理解与相互联系</h2><p>这几天得闲之余也终于能翻翻手边的书了，刚好翻到了位运算这一块，然而这一块和二进制运算这一块的关联很紧密，而自己毕业一年有余对于这些原理性的知识早就已经忘的差不多了，只记了个大概，知道原码就是这个数的本身转换而成的二进制数，反码正数就是它的原码，负数是这个数符号位不变，其余每个位取反；补码同样正数为其原码本身，负数则为源码按位取反再+1（可能说补个1比较适合’补’这个含义？）。但是相应的一些原理细节什么的都已经记得很模糊了，刚好借这个机会回忆一下。</p>
+<p>####First:原码<br>原码就是一个数的二进制本身，这里我以8位二进制为例，它可以表示0000 0000~1111 1111即2^8=256个数值。由于二进制中没有负号，所以规定了最高位为符号位，这个符号位表示了这个数的正负。</p>
+<p>有以上可知，增加了符号位的8位二进制数，其表示范围为：1111 1111~0111 1111，这里有人会觉得是-127~127？然而并不是。为什么？这个需要问0这个单身蛋，因为知道0的原码为0000 0000，那么问题来了，1000 0000呢？-1吗？</p>
+<p>下面用我喜欢的lucky number 7来做例子：7的原码为：0000 0111，-7的原码为：1000 0111<br>7+(-7)=0肯定不用解释了。但是原码相加结果却是：1000 </p>
 
         
     
@@ -556,7 +514,7 @@ hexo server</code></pre>
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2017/10/18/计算机基础/源码，反码与补码小记/cjeuwwfxx000ebg7kgu6eln6j/" id="post_nav-newer" class="prev-content">
+        <a href="/2018/03/03/网络/shadowsock-tor实现匿名访问/cjeycecav000ics7ki0vyxpbf/" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -570,7 +528,7 @@ hexo server</code></pre>
 
     <!-- Next Nav -->
     
-        <a href="/2017/10/15/Spring/Spring-IOC源码学习-1-什么是IOC/cjeuwwfxn0008bg7kbu8caxl0/" id="post_nav-older" class="next-content">
+        <a href="/2017/10/15/HEXO/HEXO-Meterial-TimeLine-Tags-Cloud-Configuration/cjeycecab0007cs7kpw620mew/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
