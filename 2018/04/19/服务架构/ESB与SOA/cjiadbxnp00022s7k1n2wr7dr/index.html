@@ -37,7 +37,7 @@
     
     <title>
         
-            Spring-IOC源码学习(1)-什么是IOC | 
+            ESB与SOA | 
         
         POFY&#39;s Blog
     </title>
@@ -49,7 +49,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="JC">
     <meta name="description" itemprop="description" content="猫毒晚期程序猿.">
-    <meta name="keywords" content=",java,Spring">
+    <meta name="keywords" content="">
 
     <!-- Import lsloader -->
     <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(key){try{localStorage.removeItem(key)}catch(e){}};lsloader.setLS=function(key,val){try{localStorage.setItem(key,val)}catch(e){}};lsloader.getLS=function(key){var val="";try{val=localStorage.getItem(key)}catch(e){val=""}return val};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var keys=[];for(var i=0;i<localStorage.length;i++){keys.push(localStorage.key(i))}keys.forEach(function(key){var data=lsloader.getLS(key);if(window.oldVersion){var remove=window.oldVersion.reduce(function(p,c){return p||data.indexOf("/*"+c+"*/")!==-1},false);if(remove){lsloader.removeLS(key)}}})}catch(e){}};lsloader.clean();lsloader.load=function(jsname,jspath,cssonload,isJs){if(typeof cssonload==="boolean"){isJs=cssonload;cssonload=undefined}isJs=isJs||false;cssonload=cssonload||function(){};var code;code=this.getLS(jsname);if(code&&code.indexOf(versionString)===-1){this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}if(code){var versionNumber=code.split(versionString)[0];if(versionNumber!=jspath){console.log("reload:"+jspath);this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}code=code.split(versionString)[1];if(isJs){this.jsRunSequence.push({name:jsname,code:code});this.runjs(jspath,jsname,code)}else{document.getElementById(jsname).appendChild(document.createTextNode(code));cssonload()}}else{this.requestResource(jsname,jspath,cssonload,isJs)}};lsloader.requestResource=function(name,path,cssonload,isJs){var that=this;if(isJs){this.iojs(path,name,function(path,name,code){that.setLS(name,path+versionString+code);that.runjs(path,name,code)})}else{this.iocss(path,name,function(code){document.getElementById(name).appendChild(document.createTextNode(code));that.setLS(name,path+versionString+code)},cssonload)}};lsloader.iojs=function(path,jsname,callback){var that=this;that.jsRunSequence.push({name:jsname,code:""});try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(path,jsname,xhr.response);return}}that.jsfallback(path,jsname)}};xhr.send(null)}catch(e){that.jsfallback(path,jsname)}};lsloader.iocss=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.iofonts=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.runjs=function(path,name,code){if(!!name&&!!code){for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code=code}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var script=document.createElement("script");script.appendChild(document.createTextNode(this.jsRunSequence[0].code));script.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(script);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var that=this;var script=document.createElement("script");script.src=this.jsRunSequence[0].path;script.type="text/javascript";this.jsRunSequence[0].status="loading";script.onload=function(){that.jsRunSequence.shift();if(that.jsRunSequence.length>0){that.runjs()}};document.body.appendChild(script)}};lsloader.tagLoad=function(path,name){this.jsRunSequence.push({name:name,code:"",path:path,status:"failed"});this.runjs()};lsloader.jsfallback=function(path,name){if(!!this.jsnamemap[name]){return}else{this.jsnamemap[name]=name}for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code="";this.jsRunSequence[k].status="failed";this.jsRunSequence[k].path=path}}this.runjs()};lsloader.cssfallback=function(path,name,cssonload){if(!!this.cssnamemap[name]){return}else{this.cssnamemap[name]=1}var link=document.createElement("link");link.type="text/css";link.href=path;link.rel="stylesheet";link.onload=link.onerror=cssonload;var root=document.getElementsByTagName("script")[0];root.parentNode.insertBefore(link,root)};lsloader.runInlineScript=function(scriptId,codeId){var code=document.getElementById(codeId).innerText;this.jsRunSequence.push({name:scriptId,code:code});this.runjs()};lsloader.loadCombo=function(jslist){var updateList="";var requestingModules={};for(var k in jslist){var LS=this.getLS(jslist[k].name);if(!!LS){var version=LS.split(versionString)[0];var code=LS.split(versionString)[1]}else{var version=""}if(version==jslist[k].path){this.jsRunSequence.push({name:jslist[k].name,code:code,path:jslist[k].path})}else{this.jsRunSequence.push({name:jslist[k].name,code:null,path:jslist[k].path,status:"comboloading"});requestingModules[jslist[k].name]=true;updateList+=(updateList==""?"":";")+jslist[k].path}}var that=this;if(!!updateList){var xhr=new XMLHttpRequest;xhr.open("get",combo+updateList,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){that.runCombo(xhr.response,requestingModules);return}}else{for(var i in that.jsRunSequence){if(requestingModules[that.jsRunSequence[i].name]){that.jsRunSequence[i].status="failed"}}that.runjs()}}};xhr.send(null)}this.runjs()};lsloader.runCombo=function(comboCode,requestingModules){comboCode=comboCode.split("/*combojs*/");comboCode.shift();for(var k in this.jsRunSequence){if(!!requestingModules[this.jsRunSequence[k].name]&&!!comboCode[0]){this.jsRunSequence[k].status="comboJS";this.jsRunSequence[k].code=comboCode[0];this.setLS(this.jsRunSequence[k].name,this.jsRunSequence[k].path+versionString+comboCode[0]);comboCode.shift()}}this.runjs()}})();</script>
@@ -231,18 +231,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://yoursite.com">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Spring-IOC源码学习(1)-什么是IOC | POFY&#39;s Blog">
+    <meta property="og:title" content="ESB与SOA | POFY&#39;s Blog">
     <meta property="og:image" content="http://yoursite.com/img/favicon.png" />
     <meta property="og:description" content="猫毒晚期程序猿.">
-    <meta property="og:article:tag" content="java"> <meta property="og:article:tag" content="Spring"> 
+    
 
     
-        <meta property="article:published_time" content="Sun Oct 15 2017 15:03:20 GMT+0800" />
-        <meta property="article:modified_time" content="Sun Oct 15 2017 15:08:08 GMT+0800" />
+        <meta property="article:published_time" content="Thu Apr 19 2018 22:11:16 GMT+0800" />
+        <meta property="article:modified_time" content="Thu Apr 19 2018 22:17:32 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="Spring-IOC源码学习(1)-什么是IOC | POFY&#39;s Blog">
+    <meta name="twitter:title" content="ESB与SOA | POFY&#39;s Blog">
     <meta name="twitter:description" content="猫毒晚期程序猿.">
     <meta name="twitter:image" content="http://yoursite.com/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -250,7 +250,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/2017/10/15/Spring/Spring-IOC源码学习-1-什么是IOC/cjg6m21rx000c3w7kmuw2rj6x/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2018/04/19/服务架构/ESB与SOA/cjiadbxnp00022s7k1n2wr7dr/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -262,10 +262,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "http://yoursite.com/2017/10/15/Spring/Spring-IOC源码学习-1-什么是IOC/cjg6m21rx000c3w7kmuw2rj6x/index.html",
-    "headline": "Spring-IOC源码学习(1)-什么是IOC",
-    "datePublished": "Sun Oct 15 2017 15:03:20 GMT+0800",
-    "dateModified": "Sun Oct 15 2017 15:08:08 GMT+0800",
+    "mainEntityOfPage": "http://yoursite.com/2018/04/19/服务架构/ESB与SOA/cjiadbxnp00022s7k1n2wr7dr/index.html",
+    "headline": "ESB与SOA",
+    "datePublished": "Thu Apr 19 2018 22:11:16 GMT+0800",
+    "dateModified": "Thu Apr 19 2018 22:17:32 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "JC",
@@ -283,7 +283,7 @@
             "url": "/img/favicon.png"
         }
     },
-    "keywords": ",java,Spring",
+    "keywords": "",
     "description": "猫毒晚期程序猿.",
 }
 </script>
@@ -349,7 +349,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#什么是IOC（Inversion-Of-Control）"><span class="post-toc-number">1.</span> <span class="post-toc-text">什么是IOC（Inversion Of Control）</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#了解什么是控制反转："><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">了解什么是控制反转：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#描述关系的配置文件："><span class="post-toc-number">1.0.2.</span> <span class="post-toc-text">描述关系的配置文件：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#对配置文件的解析："><span class="post-toc-number">1.0.3.</span> <span class="post-toc-text">对配置文件的解析：</span></a></li></ol></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#ESB和SOA到底是什么？"><span class="post-toc-number">1.</span> <span class="post-toc-text">ESB和SOA到底是什么？</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#真相"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">真相</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#怎么去清理这一团糟的东西？"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">怎么去清理这一团糟的东西？</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#使用SOA架构，用ESB提供服务"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">使用SOA架构，用ESB提供服务</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#但是要注意"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">但是要注意</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#ESB是只为银行或者类似的应用服务的吗？那么？"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">ESB是只为银行或者类似的应用服务的吗？那么？</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#但是我听说SOA全部都是关于XML，SOAP和Web服务的"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">但是我听说SOA全部都是关于XML，SOAP和Web服务的</span></a></li></ol></li></ol>
     </ul>
     
 
@@ -381,7 +381,7 @@
         
     
             <p class="article-headline-p">
-                Spring-IOC源码学习(1)-什么是IOC
+                ESB与SOA
             </p>
         </div>
 
@@ -400,7 +400,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>JC</strong>
-        <span>10月 15, 2017</span>
+        <span>4月 19, 2018</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -418,15 +418,6 @@
 
     <!-- Tags (bookmark) -->
     
-    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-        <i class="material-icons" role="presentation">bookmark</i>
-        <span class="visuallyhidden">bookmark</span>
-    </button>
-    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
-        <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/Spring/">Spring</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/java/">java</a>
-    </ul>
-    
 
     <!-- Share -->
     
@@ -441,7 +432,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Spring-IOC源码学习(1)-什么是IOC&url=http://yoursite.com/2017/10/15/Spring/Spring-IOC源码学习-1-什么是IOC/cjg6m21rx000c3w7kmuw2rj6x/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=ESB与SOA&url=http://yoursite.com/2018/04/19/服务架构/ESB与SOA/cjiadbxnp00022s7k1n2wr7dr/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -450,7 +441,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Spring-IOC源码学习(1)-什么是IOC&url=http://yoursite.com/2017/10/15/Spring/Spring-IOC源码学习-1-什么是IOC/cjg6m21rx000c3w7kmuw2rj6x/index.html&via=JC" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=ESB与SOA&url=http://yoursite.com/2018/04/19/服务架构/ESB与SOA/cjiadbxnp00022s7k1n2wr7dr/index.html&via=JC" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -459,7 +450,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/10/15/Spring/Spring-IOC源码学习-1-什么是IOC/cjg6m21rx000c3w7kmuw2rj6x/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/04/19/服务架构/ESB与SOA/cjiadbxnp00022s7k1n2wr7dr/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -468,7 +459,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2017/10/15/Spring/Spring-IOC源码学习-1-什么是IOC/cjg6m21rx000c3w7kmuw2rj6x/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2018/04/19/服务架构/ESB与SOA/cjiadbxnp00022s7k1n2wr7dr/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -480,7 +471,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=POFY&#39;s Blog&title=Spring-IOC源码学习(1)-什么是IOC&summary=猫毒晚期程序猿.&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2017/10/15/Spring/Spring-IOC源码学习-1-什么是IOC/cjg6m21rx000c3w7kmuw2rj6x/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=POFY&#39;s Blog&title=ESB与SOA&summary=猫毒晚期程序猿.&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2018/04/19/服务架构/ESB与SOA/cjiadbxnp00022s7k1n2wr7dr/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -499,14 +490,222 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h2 id="什么是IOC（Inversion-Of-Control）"><a href="#什么是IOC（Inversion-Of-Control）" class="headerlink" title="什么是IOC（Inversion Of Control）"></a>什么是IOC（Inversion Of Control）</h2><h4 id="了解什么是控制反转："><a href="#了解什么是控制反转：" class="headerlink" title="了解什么是控制反转："></a>了解什么是控制反转：</h4><blockquote>
-<p>In software engineering, inversion of control (IoC) is a design principle in which custom-written portions of a computer program receive the flow of control from a generic framework. A software architecture with this design inverts control as compared to traditional procedural programming: in traditional programming, the custom code that expresses the purpose of the program calls into reusable libraries to take care of generic tasks, but with inversion of control, it is the framework that calls into the custom, or task-specific, code.</p>
-</blockquote>
-<p>一个比较有趣的说法是“Don’t call us, we will call you.”恰当的体现了反转的意味。</p>
-<p>之前我们的代码中需要实现创建对象、以及对象所依赖的代码。现在我们只需要告诉IOC容器我需要什么对象，IOC容器便根据这个对象相关的关系将其创建出来，并将其返回给我们。</p>
-<h4 id="描述关系的配置文件："><a href="#描述关系的配置文件：" class="headerlink" title="描述关系的配置文件："></a>描述关系的配置文件：</h4><p>而这个关系的描述内容则是我们提供的相关配置文件，可以是properties,xml文件，现在也可以用注解的方式来描述容器中各个对象之间的依赖关系，使用注解方式可以很大程度简化了配置文件的编写量。</p>
-<h4 id="对配置文件的解析："><a href="#对配置文件的解析：" class="headerlink" title="对配置文件的解析："></a>对配置文件的解析：</h4><p>配置文件可以放在不同的位置以供引用，可以是一个项目的类加载路径(classpath)，可以是文件系统路径（file system），也可以是网络中的一个地址（URL）等。</p>
-<p>不同的配置文件对于其关系的描述是不一样的（不同的语法），对于外部不同的关系描述在内部中需要转换成一个统一的描述，这时就需要使用不同的解析器对其进行解析。</p>
+        <h1 id="ESB和SOA到底是什么？"><a href="#ESB和SOA到底是什么？" class="headerlink" title="ESB和SOA到底是什么？"></a>ESB和SOA到底是什么？</h1><p>ESB和其相关缩写SOA，是困惑之源。ESB是企业服务总线的缩写，而SOA的意思是面向服务架构。 但这样解析并没有太多的内在含义。所以这里尽可能的提供一些更多的信息，而不是仅仅从企业的角度的来介绍ESB和SOA。</p>
+<h2 id="真相"><a href="#真相" class="headerlink" title="真相"></a>真相</h2><p>假设一下你通过银行前端的应用登入银行，会发生什么呢？</p>
+<ol>
+<li>会显示你的名字</li>
+<li>会显示你的账号余额</li>
+<li>会展示你的信用卡和借记卡</li>
+<li>会列出你的共同基金</li>
+<li>会列出一些你可能感兴趣的，预先被计算好的，有吸引力收益的借贷产品</li>
+</ol>
+<p>现在，很可能所有这些模块都来自于不同的系统和应用，通过各种接口把数据展示出来（是HTTP?JSON? AMQP?XML? SOAP? FTP?CSV?都不重要）</p>
+<ol>
+<li>是来自在linux和Oracle的CRM系统</li>
+<li>是来自z/OS大型机的COBOL系统</li>
+<li>据说是来自大型机，但是他们的嘴巴很紧，不肯告诉你任何事情，只提供CSV文件。</li>
+<li>来自跑在Windows的混合着PHP和Ruby</li>
+<li>来自Postgresql，Python和Java，跑在Linux和Solaris的</li>
+</ol>
+<p>现在的问题是，你怎么让前端的应用跟1到5交互呢？ <strong>直接通信吗？ 不，你不会这样做的，你不会让他们直接对话的。</strong></p>
+<p>为了让在这样的复杂的环境中还能保证通过增加一些系统进行扩展，不能直接通信。这是基本原则。</p>
+<p>在下图，每条不同宽度或者样式的线表示了app之间的调用</p>
+<p><img src="https://zato.io/docs/_images/mess1-abg4.png" alt="img"></p>
+<p>大家要注意到，我们还没展示高优先级的进程呢。（比如应用1调用应用2 ，然后根据应用6的返回成功与否来决定调用应用3或者应用5；如果应用1允许的话，应用4晚点还可以抓取从应用2生产的数据。 -_-||| ）。大家还需要注意到，我们说的是服务，不是服务器。每个系统都可能跑在10台的物理机器上，那么至少有60个物理部件需要相互通信。</p>
+<p>还有一些显而易见的问题：</p>
+<p>怎么分离接口？你的计划怎么展示？如果每个应用由不同的组去管理，怎么去协调更新或者计划中的停机时间？如果生产商或者部门一半的开发者都已经离开不在现场了咋办？</p>
+<p>如果你觉得，你解决6个应用没有问题，那么30个呢？</p>
+<p><img src="https://zato.io/docs/_images/mess2a-abg4.png" alt="img"></p>
+<p>你可以处理400个吗？2000个怎么样？每个应用都有自己独特的生态系统，都需要用10个物理服务器或者设备跑在上面。所以，就好比有2万个移动的群体散落在大陆上，并且有着各自的技术的或者文化的边界。 所有这些群体彼此之间需要不断的，持续的交换信息，聊天，一刻也停不下来。</p>
+<p>对这种情况，有个很好的名字，叫一团糟。</p>
+<h2 id="怎么去清理这一团糟的东西？"><a href="#怎么去清理这一团糟的东西？" class="headerlink" title="怎么去清理这一团糟的东西？"></a>怎么去清理这一团糟的东西？</h2><p>首先，你得诚实的承认，事情已经发展到不可收拾的地步了。这样子在找补救措施的时候，你会感觉到没有那么内疚。好吧，事情已经发生了，你不知道怎么办。但是，有个机会，这团糟东西可以被清理干净。</p>
+<p>这意味着对IT系统要做一些结构上的变更。另外，我们还要回忆一下以前的经验，系统和应用很少用来被创建成到处推送数据，他们是为了支持业务，无论你的业务是什么东西：它可以是银行业务，声音记录，无线电设备或者其他任何东西。</p>
+<p>一旦你有了这两个清晰的理解， 你可以开始考虑建设或者重新设计你的系统服务。</p>
+<p>服务是有趣的，能重用的，并且原子性的，它能提供为其他有需要的应用提供用途，但是它不会用点对点的方式直接暴露出来。我们尽可能给它最短的有意义的定义。</p>
+<p>如果一个给定的功能系统要做成服务，需要满足以下这三个条件：</p>
+<ul>
+<li>有趣 <strong>I</strong> nteresting</li>
+<li>可重用 <strong>R</strong> eusable</li>
+<li>原子性 <strong>A</strong> tomic</li>
+</ul>
+<p>因此，如果满足这三个条件，他可以也应该以服务展示给其他系统，而不是直接相连。</p>
+<p>我们通过一些例子来讨论IRA方法</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>变量</td>
+<td>备注</td>
+</tr>
+<tr>
+<td>环境</td>
+<td>电力公司CRM系统</td>
+</tr>
+<tr>
+<td>功能</td>
+<td>在自己的门户中返回在2012年Q3所有客户信息</td>
+</tr>
+<tr>
+<td>有趣吗？</td>
+<td>是的，能够生成各种有用的报表和统计数据</td>
+</tr>
+<tr>
+<td>能重用吗？</td>
+<td>不，虽然它可以统计整年的数据，但是很显然，2018年是用不上这玩意的</td>
+</tr>
+<tr>
+<td>原子吗？</td>
+<td>非常像，如果每个季度都有类似的模块，那么就可以有一整年的视图。</td>
+</tr>
+<tr>
+<td>怎么让它IRA？</td>
+<td>让它接收任意的起始和截止时间，而不是限定于某个季度让它接收任意应用的访问，而不仅仅是门户，让具体的某个应用作为参数输入，系统不能只为了门户硬编码</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>变量</td>
+<td>备注</td>
+</tr>
+<tr>
+<td>环境</td>
+<td>电子商务网站</td>
+</tr>
+<tr>
+<td>功能</td>
+<td>返回某个给定客户收集过的每个商品信息</td>
+</tr>
+<tr>
+<td>有趣吗？</td>
+<td>是的。当你进入网站，你总是能够找到你想要的东西</td>
+</tr>
+<tr>
+<td>能重用吗？</td>
+<td>足够有趣，但不是精确的能重用。因为基本上没有其他应用关注里面的数据</td>
+</tr>
+<tr>
+<td>原子吗？</td>
+<td>一点也不，这个庞然大物的功能在逻辑上是有几十个小部分组成的</td>
+</tr>
+<tr>
+<td>怎么让它IRA？</td>
+<td>拆分成细小的模块，考虑怎么去描述客户（他们有地址，电话，喜欢的东西，他们喜欢的联系方式等等），任何这些东西应该做出一个独立的服务使用ESB来组合这些原子的服务</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>变量</td>
+<td>备注</td>
+</tr>
+<tr>
+<td>环境</td>
+<td>任何地方的任意CRM</td>
+</tr>
+<tr>
+<td>功能</td>
+<td>在创建账户以后，更新表C_NAZ_AJ 的CUST_AR_ZN 字段</td>
+</tr>
+<tr>
+<td>有趣吗？</td>
+<td>当然不是，这是CRM的内部函数，没有人想要用这么低层次的功能。</td>
+</tr>
+<tr>
+<td>能重用吗？</td>
+<td>可能。通过多渠道创建账户的时候，有些东西是可以重用的</td>
+</tr>
+<tr>
+<td>原子吗？</td>
+<td>看起来是，只是一个简单的更新表的行为</td>
+</tr>
+<tr>
+<td>怎么让它IRA？</td>
+<td>不要尝试去把他变成一个服务，他并不有趣。没人愿意去考虑特定的列和表，这是CRM错综复杂的细节。所以即使它是一个可重用的，原子性的，你也不应该用它来做服务。这是你（CRM）的责任去考虑，不要让别人去背这个责任。</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>变量</td>
+<td>备注</td>
+</tr>
+<tr>
+<td>环境</td>
+<td>移动电话运营商</td>
+</tr>
+<tr>
+<td>功能</td>
+<td>给预付费卡充值</td>
+</tr>
+<tr>
+<td>有趣吗？</td>
+<td>当然，每个系统都想用它。通过文本信息，语音信息，即时信息，门户，礼物卡等</td>
+</tr>
+<tr>
+<td>能重用吗？</td>
+<td>是的，他可以提供给任何其他高级的服务。</td>
+</tr>
+<tr>
+<td>原子吗？</td>
+<td>是的，从调用方看，他提供充值成功或者充值失败的结果。账务系统会把调用结果作为一些步骤其中的一步。从商业透视的角度看， 他是不可见的服务，提供接口给账务系统调用。</td>
+</tr>
+<tr>
+<td>怎么让它IRA？</td>
+<td>已经IRA了</td>
+</tr>
+</tbody>
+</table>
+<p>如果你在过去的50年或更长的时间里面，做过程序开发，你会很明显的理解，提供了一个服务，就类似于在代码中提供一个API接口。</p>
+<p>不同的是，你不是在处理单系统的子模块，而是在处理整个分布式系统的某个层级。</p>
+<h2 id="使用SOA架构，用ESB提供服务"><a href="#使用SOA架构，用ESB提供服务" class="headerlink" title="使用SOA架构，用ESB提供服务"></a>使用SOA架构，用ESB提供服务</h2><p>当你理解系统并不直接交换信息，理解什么是服务，那么现在你可以开始使用ESB了。</p>
+<p><img src="https://zato.io/docs/_images/esb-ok-abg4.png" alt="img"></p>
+<p>ESB的工作就是提供和调用集成系统的服务。使用了ESB，在大多情况下，每个系统和ESB之间，只需要定义一个访问方法，一个接口。如果这样，像上面的表一样，你有8个系统，就会有16个接口（1个方向1个）需要被创建、维护、管理和关注。</p>
+<p>如果没有ESB，你就需要56个接口需要去思考和处理。（假设每个系统都需要跟其他系统对话）少了40个接口意味着少花时间和金钱。这就是你周末不用那么神经紧张的原因之一。</p>
+<p>基于这个事实，你应该迫切地考虑需要引进ESB。</p>
+<p>如果一个系统需要重写，改变所有者，生产商或者部门分拆，这个是ESB的工作去处理这个变更。其他的系统都甚至不需要周知，因为他们与ESB的接口不变。</p>
+<p>当你开始每天使用IRA服务，你可以考虑组合他们。</p>
+<p>还记得上面的“把客户所有信息给我”的服务吗？你最好不要去创建这样的服务。虽然有时候你不得不处理客户端应用需要集成和汇总这样的信息。</p>
+<p>这将是ESB的责任，去选择原子的服务组合成混合服务，提供给某些客户端系统需要的特定的数据组合。</p>
+<p>随着时间的推移，大家开始明白，不再有数据库表、文件、批处理、功能、程序或记录。系统是架设在有趣的、可重用的、原子性的，由ESB提供的服务应用的架构之上。人们不会再考虑应用和系统之间直接传递东西。他们只会考虑ESB作为统一的接入网关，提供可以使用的有趣服务。他们甚至不在了理会谁能够提供什么，他们的系统只会关注ESB，处理与ESB相关的事情。</p>
+<p>这需要时间，耐心和合作，但是这个是可行的。</p>
+<h2 id="但是要注意"><a href="#但是要注意" class="headerlink" title="但是要注意"></a>但是要注意</h2><p>毁掉SOA概念的最好的方法就是，推出ESB，就期待所有的事情自己顺顺利利。虽然ESB是一个了不起的想法，但很不幸，只是简单的安装ESB不会解决你太多问题。最好的方法，你还是要打扫一下你的毛毯（整理一下你的架构）。</p>
+<p>像下图一样，如果不打扫，即使用了ESB也得不到任何好处。</p>
+<p><img src="https://zato.io/docs/_images/esb-mess-abg4.png" alt="img"></p>
+<p>（如果如上图构建你的系统），那么你的it维护人员就会厌恶这个系统（ESB），管理层虽然一开始会容忍ESB，认为他作为一个新系统，总会出点小问题，但是后来它就会成为一个笑柄（系统难以维护）。“什么？这就是你的新杀手锏？哈哈！”。如果ESB不是作为你IT大计划中的重要组成部分来推动事情发展的，那么这种结果不可避免。</p>
+<h2 id="ESB是只为银行或者类似的应用服务的吗？那么？"><a href="#ESB是只为银行或者类似的应用服务的吗？那么？" class="headerlink" title="ESB是只为银行或者类似的应用服务的吗？那么？"></a>ESB是只为银行或者类似的应用服务的吗？那么？</h2><p>完全不是。只要是需要多数据源和多访问方法合作去获得一个有趣结果的情况，都是一个好的选择。</p>
+<p>例如，从热传感器读取信息，并且发布到几个通道去，比如email警告、iPhone应用。 这听起来就是一个很好的集成应用平台场景。周期性的查询和监控是否某个应用的所有实例都起来了没有，跑一个预配置的脚本去发送文字信息给管理员的应用场景听起来也不错。所有需要集成在一个干净的，定义好的环境，可能都是一个ESB服务的应用场景。但通常，判断某个东西是否真的匹配成一个服务则需要相关人员的经验。</p>
+<h2 id="但是我听说SOA全部都是关于XML，SOAP和Web服务的"><a href="#但是我听说SOA全部都是关于XML，SOAP和Web服务的" class="headerlink" title="但是我听说SOA全部都是关于XML，SOAP和Web服务的"></a>但是我听说SOA全部都是关于XML，SOAP和Web服务的</h2><p>是的，这是某些人希望你这样相信的。</p>
+<p>如果你与某些使用BASE64编码的CSV文件，并且用SAML2保护的SOAP信息来发送的人或者生产商一起工作，其实挺能理解为什么你会有这样的想法。</p>
+<p>XML，SOAP和web服务有他们各自的用途，但是就像其他东西一样，他们也可能被滥用。</p>
+<p>SOA是一个关于干净的，可管理的架构。具体的某个服务用或者不用SOAP，其实是与SOA无关的。作为一个架构方法，即使你完全没有SOAP服务在上面，SOA依然是有效的。比如一个建筑师在设计一栋漂亮的建筑，他们真的跟油漆工人采用什么颜色的油漆来处理内饰没太大关系。</p>
+<p>所以不是这样的。 SOA不是关于XML，SOAP和web服务的，这些都能在SOA里面使用，但不是SOA的主体。</p>
 
         
     
@@ -527,7 +726,7 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2017/10/15/HEXO/HEXO-Meterial-TimeLine-Tags-Cloud-Configuration/cjg6m21rn00063w7kkgh0nuap/" id="post_nav-newer" class="prev-content">
+        <a href="/2018/06/11/前端/Vue.js 2.0 快速上手精华梳理/cjiadbxo600082s7kn2pdhwr0/" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -541,7 +740,7 @@
 
     <!-- Next Nav -->
     
-        <a href="/2017/10/12/Java/编译型语言、解释型语言、静态类型语言、动态类型语言的概念与区别/cjg6m21sr00103w7kytcjni1b/" id="post_nav-older" class="next-content">
+        <a href="/2018/03/09/BlockChain/数字货币钱包基础/cjiadbxo000062s7kj24uh86g/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
@@ -633,7 +832,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/10/">十月 2017<span class="sidebar_archives-count">5</span></a>
+                <a class="sidebar_archives-link" href="/archives/2018/06/">六月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/10/">十月 2017<span class="sidebar_archives-count">5</span></a>
             </ul>
         </li>
         
@@ -651,7 +850,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/BlockChain/">BlockChain<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/HEXO/">HEXO<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Java/">Java<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Spring/">Spring<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/服务架构/">服务架构<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/网络/">网络<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/计算机基础/">计算机基础<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/BlockChain/">BlockChain<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/HEXO/">HEXO<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Java/">Java<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Spring/">Spring<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/前端/">前端<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/服务架构/">服务架构<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/网络/">网络<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/计算机基础/">计算机基础<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -685,7 +884,7 @@
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">9</span>
+                <span class="sidebar-badge">10</span>
             </a>
         </li>
         
