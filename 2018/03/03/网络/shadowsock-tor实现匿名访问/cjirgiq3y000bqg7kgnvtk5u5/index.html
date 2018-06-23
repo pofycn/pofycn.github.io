@@ -43,7 +43,7 @@
     
     <title>
         
-            Vue.js 2.0 快速上手精华梳理 | 
+            shadowsock+tor实现匿名访问 | 
         
         POFY&#39;s Blog
     </title>
@@ -54,7 +54,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="猫毒晚期程序猿.">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=",网络">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -215,7 +215,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="POFY&#39;s Blog">
-    <meta name="msapplication-starturl" content="http://yoursite.com/2018/06/11/前端/Vue.js 2.0 快速上手精华梳理/cjir762vt0008ok7k7j935y02/">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2018/03/03/网络/shadowsock-tor实现匿名访问/cjirgiq3y000bqg7kgnvtk5u5/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="POFY&#39;s Blog">
@@ -230,16 +230,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/2018/06/11/前端/Vue.js 2.0 快速上手精华梳理/cjir762vt0008ok7k7j935y02/">
+    <meta property="og:url" content="http://yoursite.com/2018/03/03/网络/shadowsock-tor实现匿名访问/cjirgiq3y000bqg7kgnvtk5u5/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Vue.js 2.0 快速上手精华梳理 | POFY&#39;s Blog">
+    <meta property="og:title" content="shadowsock+tor实现匿名访问 | POFY&#39;s Blog">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="猫毒晚期程序猿.">
-    
+    <meta property="og:article:tag" content="网络"> 
 
     
-        <meta property="article:published_time" content="Mon Jun 11 2018 22:41:52 GMT+0800">
-        <meta property="article:modified_time" content="Mon Jun 11 2018 22:43:58 GMT+0800">
+        <meta property="article:published_time" content="Sat Mar 03 2018 11:23:17 GMT+0800">
+        <meta property="article:modified_time" content="Mon Mar 05 2018 00:33:56 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -247,7 +247,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/2018/06/11/前端/Vue.js 2.0 快速上手精华梳理/cjir762vt0008ok7k7j935y02/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2018/03/03/网络/shadowsock-tor实现匿名访问/cjirgiq3y000bqg7kgnvtk5u5/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -259,10 +259,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "http://yoursite.com/2018/06/11/前端/Vue.js 2.0 快速上手精华梳理/cjir762vt0008ok7k7j935y02/index.html",
-    "headline": "Vue.js 2.0 快速上手精华梳理",
-    "datePublished": "Mon Jun 11 2018 22:41:52 GMT+0800",
-    "dateModified": "Mon Jun 11 2018 22:43:58 GMT+0800",
+    "mainEntityOfPage": "http://yoursite.com/2018/03/03/网络/shadowsock-tor实现匿名访问/cjirgiq3y000bqg7kgnvtk5u5/index.html",
+    "headline": "shadowsock+tor实现匿名访问",
+    "datePublished": "Sat Mar 03 2018 11:23:17 GMT+0800",
+    "dateModified": "Mon Mar 05 2018 00:33:56 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "JC",
@@ -280,7 +280,7 @@
             "url": "/img/favicon.png"
         }
     },
-    "keywords": "",
+    "keywords": ",网络",
     "description": "猫毒晚期程序猿.",
 }
 </script>
@@ -346,7 +346,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Vue-js-2-0-快速上手精华梳理"><span class="post-toc-number">1.</span> <span class="post-toc-text">Vue.js 2.0 快速上手精华梳理</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Vue基础"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Vue基础</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Vue-router"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Vue-router</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Vuex"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">Vuex</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#入门到放弃整理"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">入门到放弃整理</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#一、vue基础"><span class="post-toc-number">1.4.0.1.</span> <span class="post-toc-text">一、vue基础</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#二、vue提高"><span class="post-toc-number">1.4.0.2.</span> <span class="post-toc-text">二、vue提高</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#三、vue-1-x和vue-2-x的区别"><span class="post-toc-number">1.4.0.3.</span> <span class="post-toc-text">三、vue 1.x和vue 2.x的区别</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#四、其他必备知识点"><span class="post-toc-number">1.4.0.4.</span> <span class="post-toc-text">四、其他必备知识点</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#需要视频教程的关注公众号-代码技巧-（ID-daimajiqiao）回复-14-即可获取-付出总会有收获"><span class="post-toc-number">1.4.0.5.</span> <span class="post-toc-text">需要视频教程的关注公众号[代码技巧]（ID:daimajiqiao）回复 14 即可获取,付出总会有收获</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Vue-js2-0核心思想"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">Vue.js2.0核心思想</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Node与Angular与Vue-js视频教程需要视频教程的关注公众号-代码技巧-（ID-daimajiqiao）回复-14-即可获取-付出总会有收获"><span class="post-toc-number">1.5.0.1.</span> <span class="post-toc-text">Node与Angular与Vue.js视频教程需要视频教程的关注公众号[代码技巧]（ID:daimajiqiao）回复 14 即可获取,付出总会有收获</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#最后建议Vue-2-0-的学习顺序"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">最后建议Vue 2.0 的学习顺序</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#尽管也称互联网，但在国内，如若有以下一个或多个需求，你就不得不学习一下科学上网了。"><span class="post-toc-number">1.</span> <span class="post-toc-text">尽管也称互联网，但在国内，如若有以下一个或多个需求，你就不得不学习一下科学上网了。</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#一、绕过-GFW-和-ISP-劫持"><span class="post-toc-number">2.</span> <span class="post-toc-text">一、绕过 GFW 和 ISP 劫持</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#二、匿名上网"><span class="post-toc-number">3.</span> <span class="post-toc-text">二、匿名上网</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#三、总结"><span class="post-toc-number">4.</span> <span class="post-toc-text">三、总结</span></a></li></ol>
     </ul>
     
 
@@ -378,7 +378,7 @@
         
     
             <p class="article-headline-p">
-                Vue.js 2.0 快速上手精华梳理
+                shadowsock+tor实现匿名访问
             </p>
         </div>
 
@@ -397,7 +397,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>JC</strong>
-        <span>6月 11, 2018</span>
+        <span>3月 03, 2018</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -415,6 +415,15 @@
 
     <!-- Tags (bookmark) -->
     
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/网络/">网络</a>
+    </ul>
+    
 
     <!-- Share -->
     
@@ -429,7 +438,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Vue.js 2.0 快速上手精华梳理&url=http://yoursite.com/2018/06/11/前端/Vue.js 2.0 快速上手精华梳理/cjir762vt0008ok7k7j935y02/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=shadowsock+tor实现匿名访问&url=http://yoursite.com/2018/03/03/网络/shadowsock-tor实现匿名访问/cjirgiq3y000bqg7kgnvtk5u5/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -438,7 +447,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Vue.js 2.0 快速上手精华梳理&url=http://yoursite.com/2018/06/11/前端/Vue.js 2.0 快速上手精华梳理/cjir762vt0008ok7k7j935y02/index.html&via=JC" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=shadowsock+tor实现匿名访问&url=http://yoursite.com/2018/03/03/网络/shadowsock-tor实现匿名访问/cjirgiq3y000bqg7kgnvtk5u5/index.html&via=JC" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -447,7 +456,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/06/11/前端/Vue.js 2.0 快速上手精华梳理/cjir762vt0008ok7k7j935y02/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/03/03/网络/shadowsock-tor实现匿名访问/cjirgiq3y000bqg7kgnvtk5u5/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -456,7 +465,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2018/06/11/前端/Vue.js 2.0 快速上手精华梳理/cjir762vt0008ok7k7j935y02/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2018/03/03/网络/shadowsock-tor实现匿名访问/cjirgiq3y000bqg7kgnvtk5u5/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -468,7 +477,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=POFY&#39;s Blog&title=Vue.js 2.0 快速上手精华梳理&summary=猫毒晚期程序猿.&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2018/06/11/前端/Vue.js 2.0 快速上手精华梳理/cjir762vt0008ok7k7j935y02/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=POFY&#39;s Blog&title=shadowsock+tor实现匿名访问&summary=猫毒晚期程序猿.&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2018/03/03/网络/shadowsock-tor实现匿名访问/cjirgiq3y000bqg7kgnvtk5u5/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -487,82 +496,86 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h1 id="Vue-js-2-0-快速上手精华梳理"><a href="#Vue-js-2-0-快速上手精华梳理" class="headerlink" title="Vue.js 2.0 快速上手精华梳理"></a>Vue.js 2.0 快速上手精华梳理</h1><p>自从Vue2.0发布后，Vue就成了前端领域的热门话题，github也突破了三万的star，那么对于新手来说，如何高效快速的学习Vue2.0呢。</p>
-<h2 id="Vue基础"><a href="#Vue基础" class="headerlink" title="Vue基础"></a>Vue基础</h2><p>对于没有接触过es6和webpack的童鞋来说，不建议直接用官方的脚手架vue-cli构件项目。<br>先按文档顺序最少学习完组件那一章。直接在html文件中引入vue.js开始学习,了解vue的基础指令，和整个vue实例的基础架构。<br>vue的生命周期很重要，了解这点以后可以免去很多问题。<br>学完这些可以做一些练手的小项目，比如万年不变的todolist。。。<br>现在可以开始学习使用vue-cli构件项目了，学习组件化之前，推荐先看一下es6关于模块的介绍。阮一峰《ECMAScript6》 Module<br>光会这些还是不够的，还得会一些npm基础，知道如何用git-bush来安装模块依赖，会一些常用的命令。这方面的知识可以参阅npm入门文档<br>看完这些就可以试着将之前的写的demo用搭建的vue-cli来实现。附上我写的一个入门小demovue-demo-search<br>多看看组件那里，看看如何在vue-cli中怎么实现组件化。<br>到这里vue基础篇就结束了。你还可以有条件的参阅剩下的官方文档里面的进阶篇，如果时间有限，就直接进入vue-router</p>
-<h2 id="Vue-router"><a href="#Vue-router" class="headerlink" title="Vue-router"></a>Vue-router</h2><p>和之前一样，推荐直接用html+js过一遍文档<br>对路由导航钩子得好好看一看。<br>看完文档就可以上手vue-cli，一般新手在这几天都会死活跑不出来。偷笑<br>最直接的方法就是去github上搜一些关于vue-router2.0的demo，看如何构件路由，如何构件项目目录。<br>我这里有一个传送门<br>如果能跑出来，就可以做一些小项目了，比如写一个知乎日报啊偷笑，这些demo在github上很多。<br>可以结合一些组件库写demo，这样可以更加了解组件化。比如饿了么团队的Element、mint-ui</p>
-<h2 id="Vuex"><a href="#Vuex" class="headerlink" title="Vuex"></a>Vuex</h2><p>什么是vuex？<br>Vuex 是一个专门为 Vue.js 应用设计的 状态管理模型 + 库。它为应用内的所有组件提供集中式存储服务，其中的规则确保状态只能按预期方式变更。说白了就是控制应用的一些全局状态。状态改变了，对应的视图也会改变。</p>
-<p>在学习Vuex时，会有一些ES6特性，当遇到这些时，最好不要一带而过，去好好看一看这些es6特性。<br>比如在学习Action时可以看看ES6新增的Promise和参数解构。<br>实践的方法一样是先看别人别人写的代码，比如官方的购物车实例的应用结构<br>把之前写的demo优化一下，有些地方可以用用vuex<br>vuex主要是用来对不同组件间进行通信，它构建了一个Vue实例的全局数据与方法，这些数据与方法可以在该Vue实例的所有组件中get与set</p>
-<h2 id="入门到放弃整理"><a href="#入门到放弃整理" class="headerlink" title="入门到放弃整理"></a>入门到放弃整理</h2><h4 id="一、vue基础"><a href="#一、vue基础" class="headerlink" title="一、vue基础"></a>一、vue基础</h4><p><a href="https://link.juejin.im/?target=https%3A%2F%2Frouter.vuejs.org%2Fzh-cn%2F" target="_blank" rel="external">Vue2.0最全文档</a><br><a href="https://link.juejin.im/?target=https%3A%2F%2Fsegmentfault.com%2Fa%2F1190000009651628" target="_blank" rel="external">Vue2.0 探索之路——vue-router入门教程和总结</a><br><a href="https://link.juejin.im/?target=https%3A%2F%2Fzhuanlan.zhihu.com%2Fp%2F23078117" target="_blank" rel="external">Vue.js 2.0 快速上手</a><br><a href="https://link.juejin.im/?target=http%3A%2F%2Flarabase.com%2Fcollection%2F2%2Fpost%2F126" target="_blank" rel="external">Vuejs2.0 文档攻略</a><br><a href="https://link.juejin.im/?target=http%3A%2F%2Fwww.jianshu.com%2Fp%2F98b8a8fb00e6" target="_blank" rel="external">“Vue2.0”跟俺一起全面入坑 01</a><br><a href="https://link.juejin.im/?target=http%3A%2F%2Fwww.jianshu.com%2Fp%2Fc01b984509ff" target="_blank" rel="external">“Vue2.0”跟俺一起全面入坑 02</a><br><a href="https://link.juejin.im/?target=http%3A%2F%2Fwww.jianshu.com%2Fp%2F6d0213d1d109" target="_blank" rel="external">“Vue2.0”跟俺一起全面入坑 03</a><br><a href="https://link.juejin.im/?target=http%3A%2F%2Fwww.jianshu.com%2Fp%2F2e77524a088b" target="_blank" rel="external">“Vue2.0”跟俺一起全面入坑 —— 自定义便签</a><br><a href="https://link.juejin.im/?target=http%3A%2F%2Fwww.jianshu.com%2Fp%2F282682abd9f5" target="_blank" rel="external">超好用的VueJs调试工具——vue-devtools</a><br><a href="https://link.juejin.im/?target=http%3A%2F%2Fwww.jianshu.com%2Fp%2F1626b8643676" target="_blank" rel="external">Vue2.0史上最全入坑教程（上）—— 搭建Vue脚手架（vue-cli）</a><br><a href="https://link.juejin.im/?target=http%3A%2F%2Fwww.jianshu.com%2Fp%2F2b661d01eaf8" target="_blank" rel="external">Vue2.0史上最全入坑教程（中）—— 脚手架代码详解</a><br><a href="https://link.juejin.im/?target=http%3A%2F%2Fwww.jianshu.com%2Fp%2Fec436222c608" target="_blank" rel="external">Vue2.0史上最全入坑教程（下）—— 实战案例</a><br><a href="https://link.juejin.im/?target=http%3A%2F%2Fwww.jianshu.com%2Fp%2F7c5ccfac3fa8" target="_blank" rel="external">Vue2.0史上最全入坑教程（完）—— 实战案例</a><br><a href="https://link.juejin.im/?target=http%3A%2F%2Fwww.jianshu.com%2Fp%2F607cf1a413c5" target="_blank" rel="external">vue-cli中配置sass和利用SASS函数功能实现px转rem</a></p>
-<h4 id="二、vue提高"><a href="#二、vue提高" class="headerlink" title="二、vue提高"></a>二、vue提高</h4><p><a href="https://link.juejin.im/?target=https%3A%2F%2Fwww.oudahe.com%2Fp%2F13909%2F" target="_blank" rel="external">Vue路由跳转问题记录详解</a><br><a href="https://link.juejin.im/?target=http%3A%2F%2Fwww.cnblogs.com%2Fkidsitcn%2Fp%2F5409994.html" target="_blank" rel="external">vuejs心法和技法</a><br><a href="https://link.juejin.im/?target=http%3A%2F%2Fwww.jianshu.com%2Fp%2F2339426e037b" target="_blank" rel="external">Vue2.0生命周期和钩子函数的一些理解 </a>===》推荐<br><a href="https://link.juejin.im/?target=http%3A%2F%2Fwww.jianshu.com%2Fp%2Fa87dee15e6c3" target="_blank" rel="external">用webpack（2.x语法）手动搭建Vue项目</a><br><a href="https://link.juejin.im/?target=http%3A%2F%2Fwww.jianshu.com%2Fp%2Fa2fc286cb8ab" target="_blank" rel="external">全面解析vue-cli生成的项目中使用其他库（js库、css库）</a><br><a href="https://link.juejin.im/?target=http%3A%2F%2Fwww.jianshu.com%2Fp%2F0fcdf380afe7" target="_blank" rel="external">Vuex从入门到熟练使用</a><br><a href="https://link.juejin.im/?target=http%3A%2F%2Fwww.jianshu.com%2Fp%2Fc2e1a07bd1f7" target="_blank" rel="external">vue与服务端通信—vue-resource</a><br><a href="https://link.juejin.im/?target=http%3A%2F%2Fwww.jianshu.com%2Fp%2F16f05ae4ca0f" target="_blank" rel="external">vue开发过程中跨域最简单解决方案</a><br><a href="https://link.juejin.im/?target=http%3A%2F%2Fwww.jianshu.com%2Fp%2F8c43636c6c47" target="_blank" rel="external">富文本编辑器Ueditor如何在Vue中使用？</a></p>
-<h4 id="三、vue-1-x和vue-2-x的区别"><a href="#三、vue-1-x和vue-2-x的区别" class="headerlink" title="三、vue 1.x和vue 2.x的区别"></a>三、vue 1.x和vue 2.x的区别</h4><p><a href="https://link.juejin.im/?target=http%3A%2F%2Fwww.jianshu.com%2Fp%2F711513ad58f8" target="_blank" rel="external">到了Vue2.x有哪些变化？—— 知识点</a><br><a href="https://link.juejin.im/?target=http%3A%2F%2Fwww.jianshu.com%2Fp%2F4cbc409516bf" target="_blank" rel="external">到了Vue2.x有哪些变化？—— 组件通信</a></p>
-<h4 id="四、其他必备知识点"><a href="#四、其他必备知识点" class="headerlink" title="四、其他必备知识点"></a>四、其他必备知识点</h4><p><a href="https://link.juejin.im/?target=http%3A%2F%2Fwww.jianshu.com%2Fp%2Fe37d902abd91" target="_blank" rel="external">ES6入门（一）</a><br><a href="https://link.juejin.im/?target=http%3A%2F%2Fwww.jianshu.com%2Fp%2F78df394e505c" target="_blank" rel="external">ES6快速入门（二）</a><br><a href="https://link.juejin.im/?target=http%3A%2F%2Fwww.jianshu.com%2Fp%2F942efadf27f7" target="_blank" rel="external">ES6快速入门（三）</a></p>
-<p><img src="https://user-gold-cdn.xitu.io/2017/9/2/e14e201c13a3e14a04920b57c257189b?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="img"></p>
-<h4 id="需要视频教程的关注公众号-代码技巧-（ID-daimajiqiao）回复-14-即可获取-付出总会有收获"><a href="#需要视频教程的关注公众号-代码技巧-（ID-daimajiqiao）回复-14-即可获取-付出总会有收获" class="headerlink" title="需要视频教程的关注公众号[代码技巧]（ID:daimajiqiao）回复 14 即可获取,付出总会有收获"></a>需要视频教程的关注公众号[代码技巧]（ID:daimajiqiao）回复 14 即可获取,付出总会有收获</h4><h2 id="Vue-js2-0核心思想"><a href="#Vue-js2-0核心思想" class="headerlink" title="Vue.js2.0核心思想"></a>Vue.js2.0核心思想</h2><p>Vue.js是一个提供MVVM数据双向绑定的库，专注于UI层面，核心思想是：数据驱动、组件系统。</p>
-<p>数据驱动：</p>
-<p>Vue.js数据观测原理在技术实现上，利用的是ES5Object.defineProperty和存储器属性: getter和setter（所以只兼容IE9及以上版本），可称为基于依赖收集的观测机制。核心是VM，即ViewModel，保证数据和视图的一致性。</p>
-<p>watcher：每一个指令都会有一个对应的用来观测数据的对象，叫做watcher，比如v-text=”msg”, ，即为两个watcher，watcher对象中包含了待渲染的关联DOM元素。</p>
-<pre><code>&lt;div id=&quot;app&quot;&gt;
-  {{ message }}
-&lt;/div&gt;
-var app = new Vue({
-  el: &#39;#app&#39;,
-  data: {
-    message: &#39;Hello Vue!&#39;
-  }
-})
-</code></pre><p>基于依赖收集的观测机制原理：</p>
-<p>1 将原生的数据改造成 “可观察对象”，通常为，调用defineProperty改变data对象中数据为存储器属性。一个可观察对象可以被取值getter，也可以被赋值setter。<br>2 在解析模板，也就是在watcher的求值过程中，每一个被取值的可观察对象都会将当前的watcher注册为自己的一个订阅者，并成为当前watcher的一个依赖。<br>3 当一个被依赖的可观察对象被赋值时，它会通知notify所有订阅自己的watcher重新求值，并触发相应的更新，即watcher对象中关联的DOM改变渲染。<br>依赖收集的优点在于可以精确、主动地追踪数据的变化，不需要手动触发或对作用域中所有watcher都求值（angular脏检查实现方式的缺点）。特殊的是，对于数组，需要通过包裹数组的可变方法（比如push）来监听数组的变化。在添加/删除属性，或是修改数组特定位置元素时，也需要调用特定的函数，如obj.$add(key, value)才能触发更新。这是受ES5的语言特性所限。</p>
-<p>组件系统：</p>
-<p>应用类UI可以看作全部是由组件树构成的。</p>
-<p>注册一个组件：</p>
-<pre><code>Vue.component(&#39;my-component&#39;, {
-    // 模板
-    template: &#39;&lt;div&gt;{{msg}} {{privateMsg}}&lt;/div&gt;&#39;,
-    // 接受参数
-    props: {
-        msg: String    
-    },
-    // 私有数据，需要在函数中返回以避免多个实例共享一个对象
-    data: function () {
-        return {
-            privateMsg: &#39;component!&#39;
-        }
-    }
-})
-&lt;my-component msg=&quot;hello&quot;&gt;&lt;/my-component&gt;
-</code></pre><p>组件的核心选项</p>
-<p>1 模板（template）：模板声明了数据和最终展现给用户的DOM之间的映射关系。<br>2 初始数据（data）：一个组件的初始数据状态。对于可复用的组件来说，这通常是私有的状态。<br>3 接受的外部参数(props)：组件之间通过参数来进行数据的传递和共享。<br>4 方法（methods）：对数据的改动操作一般都在组件的方法内进行。<br>5 生命周期钩子函数（lifecycle hooks）：一个组件会触发多个生命周期钩子函数，最新2.0版本对于生命周期函数名称改动很大。<br>6 私有资源（assets）：Vue.js当中将用户自定义的指令、过滤器、组件等统称为资源。一个组件可以声明自己的私有资源。私有资源只有该组件和它的子组件可以调用。<br>Webpack是一个开源的前端模块构建工具，它提供了强大的loader API来定义对不同文件格式的预处理逻辑，这是.vue后缀单文件组件形式的基础。所以在此基础上，尤大开发的vue-loader允许将模板、样式、逻辑三要素整合在同一个文件中，以.vue文件后缀形成单文件组件格式，方便项目架构和开发引用。</p>
-<p>其他特性：</p>
-<p>1 异步批量DOM更新：当大量数据变动时，所有受到影响的watcher会被推送到一个队列中，并且每个watcher只会推进队列一次。这个队列会在进程的下一个 tick异步执行。这个机制可以避免同一个数据多次变动产生的多余DOM操作，也可以保证所有的DOM写操作在一起执行，避免DOM读写切换可能导致的layout。<br>2 动画系统：Vue.js提供了简单却强大的动画系统，当一个元素的可见性变化时，用户不仅可以很简单地定义对应的CSS Transition或Animation效果，还可以利用丰富的JavaScript钩子函数进行更底层的动画处理。<br>3 可扩展性：除了自定义指令、过滤器和组件，Vue.js还提供了灵活的mixin机制，让用户可以在多个组件中复用共同的特性。</p>
-<p><img src="https://user-gold-cdn.xitu.io/2017/9/2/45c0b734bfb8b174386fd34e889786b3?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="img"></p>
-<h4 id="Node与Angular与Vue-js视频教程需要视频教程的关注公众号-代码技巧-（ID-daimajiqiao）回复-14-即可获取-付出总会有收获"><a href="#Node与Angular与Vue-js视频教程需要视频教程的关注公众号-代码技巧-（ID-daimajiqiao）回复-14-即可获取-付出总会有收获" class="headerlink" title="Node与Angular与Vue.js视频教程需要视频教程的关注公众号[代码技巧]（ID:daimajiqiao）回复 14 即可获取,付出总会有收获"></a>Node与Angular与Vue.js视频教程需要视频教程的关注公众号[代码技巧]（ID:daimajiqiao）回复 14 即可获取,付出总会有收获</h4><h2 id="最后建议Vue-2-0-的学习顺序"><a href="#最后建议Vue-2-0-的学习顺序" class="headerlink" title="最后建议Vue 2.0 的学习顺序"></a>最后建议Vue 2.0 的学习顺序</h2><p>起步</p>
-<ol>
-<li>扎实的 JavaScript / HTML / CSS 基本功。这是前置条件。</li>
-<li>通读官方教程 (guide) 的基础篇。不要用任何构建工具，就只用最简单的 script，把教程里的例子模仿一遍，理解用法。不推荐上来就直接用 vue-cli 构建项目，尤其是如果没有 Node/Webpack 基础。</li>
-<li>照着官网上的示例，自己想一些类似的例子，模仿着实现来练手，加深理解。</li>
-<li>阅读官方教程进阶篇的前半部分，到『自定义指令 (Custom Directive) 』为止。着重理解 Vue 的响应式机制和组件生命周期。『渲染函数（Render Function)』如果理解吃力可以先跳过。</li>
-<li><p>阅读教程里关于路由和状态管理的章节，然后根据需要学习 vue-router 和 vuex。同样的，先不要管构建工具，以跟着文档里的例子理解用法为主。</p>
-</li>
-<li><p>走完基础文档后，如果你对于基于 Node 的前端工程化不熟悉，就需要补课了。下面这些严格来说并不是 Vue 本身的内容，也不涵盖所有的前端工程化知识，但对于大型的 Vue 工程是前置条件，也是合格的『前端工程师』应当具备的知识。</p>
-</li>
-</ol>
-<p>前端生态/工程化</p>
-<ol>
-<li>了解 JavaScript 背后的规范，ECMAScript 的历史和目前的规范制定方式。学习 ES2015/16 的新特性，理解 ES2015 modules，适当关注还未成为标准的提案。</li>
-<li>学习命令行的使用。建议用 Mac。</li>
-<li>学习 Node.js 基础。建议使用 nvm 这样的工具来管理机器上的 Node 版本，并且将 npm 的 registry 注册表配置为淘宝的镜像源。至少要了解 npm 的常用命令，npm scripts 如何使用，语义化版本号规则，CommonJS 模块规范（了解它和 ES2015 Modules 的异同），Node 包的解析规则，以及 Node 的常用 API。应当做到可以自己写一些基本的命令行程序。注意最新版本的 Node (6+) 已经支持绝大部分 ES2015 的特性，可以借此巩固 ES2015。</li>
-<li>了解如何使用 / 配置 Babel 来将 ES2015 编译到 ES5 用于浏览器环境。</li>
-<li>学习 Webpack。Webpack 是一个极其强大同时也复杂的工具，作为起步，理解它的『一切皆模块』的思想，并基本了解其常用配置选项和 loader 的概念/使用方法即可，比如如何搭配 Webpack 使用 Babel。学习 Webpack 的一个挑战在于其本身文档的混乱，建议多搜索搜索，应该还是有质量不错的第三方教程的。英文好的建议阅读 Webpack 2.0 的文档，比起 1.0 有极大的改善，但需要注意和 1.0 的不兼容之处。</li>
-</ol>
-<p>Vue 进阶</p>
-<ol>
-<li>有了 Node 和 Webpack 的基础，可以通过 vue-cli 来搭建基于 Webpack ，并且支持单文件组件的项目了。建议用 webpack-simple 这个模板开始，并阅读官方教程进阶篇剩余的内容以及 vue-loader 的文档，了解一些进阶配置。有兴趣的可以自己亲手从零开始搭一个项目加深理解。</li>
-<li>根据 例子 尝试在 Webpack 模板基础上整合 vue-router 和 vuex</li>
-<li>深入理解 Virtual DOM 和『渲染函数 (Render Functions)』这一章节（可选择性使用 JSX)，理解模板和渲染函数之间的对应关系，了解其使用方法和适用场景。</li>
-<li>（可选）根据需求，了解服务端渲染的使用（需要配合 Node 服务器开发的知识）。其实更重要的是理解它所解决的问题并搞清楚你是否需要它。</li>
-<li>阅读开源的 Vue 应用、组件、插件源码，自己尝试编写开源的 Vue 组件、插件。</li>
-</ol>
-<p>本文转自：<a href="https://juejin.im/post/59aa1248518825392656a86a" target="_blank" rel="external">https://juejin.im/post/59aa1248518825392656a86a</a></p>
+        <h2 id="尽管也称互联网，但在国内，如若有以下一个或多个需求，你就不得不学习一下科学上网了。"><a href="#尽管也称互联网，但在国内，如若有以下一个或多个需求，你就不得不学习一下科学上网了。" class="headerlink" title="尽管也称互联网，但在国内，如若有以下一个或多个需求，你就不得不学习一下科学上网了。"></a>尽管也称互联网，但在国内，如若有以下一个或多个需求，你就不得不学习一下科学上网了。</h2><p>访问的网站或服务被（GFW）墙；</p>
+<ul>
+<li>网络提供商（ISP）劫持了网络流量；</li>
+<li>需要匿名（隐藏真实 IP）的情况，如渗透测试；</li>
+<li>躲避网络监控；<br>其他情况。<br>这里分享一下我的科学上网技巧，使用到的工具软件可能有 Shadowsocks、Lantern、Privoxy、Tor。根据不同的目的选择不同的工具。</li>
+</ul>
+<h2 id="一、绕过-GFW-和-ISP-劫持"><a href="#一、绕过-GFW-和-ISP-劫持" class="headerlink" title="一、绕过 GFW 和 ISP 劫持"></a>一、绕过 GFW 和 ISP 劫持</h2><p>最简单和不折腾的方法是购买 VPN，次之是购买一台海外 VPS，自己安装 VPN 或 Shadowsocks 服务端。VPN 的优点是可以全局翻墙，Shadowsocks 虽然可以设置全局模式，但是对于不支持代理的本地应用是没有办法的，当然这种情况下可以试试 ProxifierPE 强制所有连接通过代理上网。</p>
+<p>使用 Shadowsocks 可能遇到的另一个问题是，因为 Shadowsocks 使用的是 SOCKS5 类型的代理，当本地应用只支持 HTTP/HTTPS 类型代理时，就需要自己解决 HTTP 转换为 SOCKS5 的问题。当然，这个问题使用 Privoxy 就能很好地解决。</p>
+<p>本节主要介绍如何组合使用 Shadowsocks 和 Privoxy，并假设你已经安装并配置好了 Shadowsocks（Linux 中可以安装 shadowsocks-qt5 或 命令行版本的 Shadowsocks）。</p>
+<p>Shadowsocks 与 Privoxy 组合使用的示意图如下所示：</p>
+<p><img src="https://i.imgur.com/sAKKSVj.png" alt="Shadowsocks Privoxy 组合使用示意图"></p>
+<p>假设你已经配置好了 Shadowsocks，接下来配置 Privoxy。<br>Windows 系统中右键点击 Privoxy 托盘图标，依次点击 Edit - Main Configuration 打开配置文件；Linux 系统中 Privoxy 的配置文件位于/etc/privoxy/config。<br>配置文件修改为：</p>
+<pre><code># 把 HTTP 流量转发到本机 127.0.0.1:1080 的 Shadowsocks
+forward-socks5 / 127.0.0.1:1080 .
+
+# 可选，默认只监听本地连接 127.0.0.1:8118
+# 可以允许局域网中的连接
+listen-address 0.0.0.0:8118
+</code></pre><p>启动 Shadowsocks 和 Privoxy 后，把本地应用的代理设置为 HTTP/HTTPS 类型的 127.0.0.1:8118，就可以绕过 GFW 和 ISP 了。如果局域网中的其他 PC 或手机也希望使用该电脑上网（假设该电脑 IP 地址为 192.168.1.10），把它们的代理设置为 19.168.1.10:8118 即可。</p>
+<p><strong>Tips</strong></p>
+<p>目前，有一个讨巧的的办法替代这两者的组合：使用 Lantern —— 一款开源的安全上网工具。它使用的是 HTTP 类型代理，本地端口为 8787，也就是说，把本地应用的代理设置为 127.0.0.1:8787 就可以使用 HTTP 类型的代理了。而且使用它，也无需自己购买 VPS。</p>
+<p>Lantern 默认非全局代理，可以在设置中改为全局模式。</p>
+<p>另一方面，Lantern 只监听本机 127.0.0.1:8787 的连接，如果局域网中的电脑或手机也想通过这台电脑翻墙（假设该电脑 IP 地址为 192.168.1.10），那么也需要配合 Privoxy 使用。这时，Privoxy 的配置应该如下：</p>
+<pre><code># 监听局域网中连接到本地 8118 端口的连接，转发给 8787 端口的 Lantern
+forward / 127.0.0.1:8787
+listen-address 127.0.0.1:8118    # 可改为 0.0.0.0:8118 允许局域网的连接
+</code></pre><h2 id="二、匿名上网"><a href="#二、匿名上网" class="headerlink" title="二、匿名上网"></a>二、匿名上网</h2><p>网络中保持匿名的办法是使用 Tor，匿名的意思是隐藏你当前的 IP 地址。Internet 上有很多志愿者运行着 Tor 中继节点，Tor 能保证从出发点的流量至少经过三个不同的中继节点到达目的地址，而且这三个不同的中继不会每次都相同。</p>
+<p>形象地说，你想把一封匿名信交给小明，在大街上随便找了一陌生人 A 让 A 帮忙转交，A 走了一段路程后随便找了一个陌生人 B 让 B 帮忙转交，B 走了一段路程后随便找了一个陌生人 C 让 C 帮忙转交，最终 C 按照信封上的地址找到了小明并把信交给了他。小明只知道是 C 转交了这封信，至于是谁写的这封信，他就无从得知了。A、B、C 分别对应着 Tor 网络的中继节点，这种投递匿名信的方式就起到了隐藏 IP 地址的效果。</p>
+<p>如下图所示，使用 Tor 从本机经过三跳访问了 Google。</p>
+<p><img src="https://i.imgur.com/DPtDl78.png" alt=""></p>
+<p><strong>Tor 浏览器</strong><br>为了方便使用 Tor，Tor 开发者把 Tor 集成到了定制版的 Firefox 中，简单设置一下就能正常使用。</p>
+<p>Tor 浏览器专为大陆等网络环境加入了流量混淆的选项。首次打开浏览器时会弹出 Tor 状态检查，点击设置配置 Tor 网桥，勾选互联网提供商（ISP）是否对 Tor 网络连接进行了封锁或审查中的是，把下一步中的网桥类型选择meek-amazon或meek-azure。这两者在大陆没被完全封锁，因此可以用来做跳板网桥。</p>
+<p>不过随着网络环境的恶化，Tor 提供的网桥类型都不可用时，就需要使用自己的 Shadowsocks 或 Lantern 代理了。</p>
+<p>首次打开 Tor 浏览器，在 Tor 设置中勾选互联网提供商（ISP）是否对 Tor 网络连接进行了封锁或审查中的否，在下一步是否需要本地代理访问互联网？中选择是，下一步中设置你的代理：</p>
+<p>使用 Shadowsocks 则设置为 SOCKS5 类型的 127.0.0.1:1080；<br>使用 Lantern 则设置为 HTTP/HTTPS 类型的 127.0.0.1:8787；<br>如果通过局域网中其他计算机的配置联网，把 127.0.0.1 改为那台计算机的 IP 地址。</p>
+<p>使用了代理的 Tor 浏览器原理示意图如下（以 Tor + Shadowsocks 组合为例）：</p>
+<p>Tor_Shadowsocks<br>Tor 浏览器 + Shadowsocks 组合使用示意图<br><img src="https://i.imgur.com/w8B4bWe.png" alt=""></p>
+<p>Tor Expert Bundle<br>Tor 浏览器适用于使用浏览器匿名上网的场景，如果打算让本地应用（如其他浏览器、Linux 中的 Terminal 等）也使用 Tor 隐藏 IP 地址，那么就需要自己手动配置 Tor 了。从 Tor 官网下载 操作系统对应的 Expert Bundle，它只包含 Tor 工具，不含浏览器。</p>
+<p>假设你已经配置好了 Shadowsocks，接下来，为 Tor 配置 Shadowsocks 代理。</p>
+<p>Windows 系统中，打开 %AppData%/tor 目录（如果不存在则创建该目录），新建 torrc 文件，内容如下：</p>
+<pre><code>## 通过 SOCKS5 代理
+SOCKS5Proxy 127.0.0.1:1080
+## 如果使用 HTTP/HTTPS 代理
+# HTTPSProxy 127.0.0.1:8118
+
+## 如果只允许特定端口的网络连接，如 80 和 443
+ReachableAddresses *:80,*:443
+ReachableAddresses reject *:*
+</code></pre><p><strong>Linux</strong> 系统中，Tor 的配置文件位于 /etc/tor/torrc，配置内容同上。</p>
+<p>启动 Shadowsocks 和 Tor，因为 Tor 监听的是 SOCKS5 类型的本地 9050 端口，把需要匿名的本地应用代理设置为 SOCKS5 类型，代理地址设置为 127.0.0.1:9050，实现匿名上网。</p>
+<p>还是老问题，如果本地应用只支持 HTTP/HTTPS 代理类型，那么仍需要使用 Privoxy，修改其配置文件为：</p>
+<pre><code>forward-socks5 / 127.0.0.1:9050 .
+listen-address 127.0.0.1:8118    # 可改为 0.0.0.0:8118 允许局域网的连接
+</code></pre><p>这样一来，本地应用的代理设置为 HTTP/HTTPS 类型的 127.0.0.1:8118 就可以实现匿名上网了。</p>
+<p>Privoxy + Tor + Shadowsocks 组合使用示意图如下所示：<br><img src="https://i.imgur.com/oRaHkuq.png" alt="Privoxy + Tor + Shadowsocks 组合使用示意图"></p>
+<p><strong>One More Tip</strong><br>使用 Tor 匿名访问网络除了应用于渗透测试，另一个应用场景是编写爬虫变换 IP 地址爬取站点，减小被网站屏蔽的可能性。</p>
+<p>在 Linux Terminal 中，使用 export 命令设置代理，可以只在当前 Terminal 中生效，</p>
+<pre><code>export http_proxy=http://127.0.0.1:8118
+export https_proxy=https://127.0.0.1:8118
+</code></pre><h2 id="三、总结"><a href="#三、总结" class="headerlink" title="三、总结"></a>三、总结</h2><p>接下来简要归纳上述内容，给出每种组合的配置内容。</p>
+<p><strong>Privoxy + Shadowsocks 组合 —— 翻墙</strong><br>配置 Privoxy，Linux 系统中位于 /etc/privoxy/config：</p>
+<pre><code>forward-socks5 / 127.0.0.1:1080 .
+listen-address 127.0.0.1:8118    # 可改为 0.0.0.0:8118 允许局域网的连接
+</code></pre><p>本地代理需设置为 HTTP/HTTPS 类型的 127.0.0.1:8118。<br>如果不使用 Privoxy，本地代理需设置为 SOCKS5 类型的 127.0.0.1:1080。</p>
+<p><strong>Privoxy + Tor + Shadowsocks 组合 —— 匿名上网</strong><br>配置 Privoxy，Linux 系统中位于 /etc/privoxy/config：</p>
+<pre><code>forward-socks5 / 127.0.0.1:9050 .
+listen-address 127.0.0.1:8118    # 可改为 0.0.0.0:8118 允许局域网的连接
+</code></pre><p>配置 Tor，Windows 系统中位于 %AppData%/tor/torrc，Linux 系统中位于 /etc/tor/torrc：</p>
+<pre><code>SOCKS5Proxy 127.0.0.1:1080    # Shadowsocks 代理地址
+ReachableAddresses *:80,*:443
+ReachableAddresses reject *:*
+</code></pre><p>本地代理需设置为 HTTP/HTTPS 类型的 127.0.0.1:8118。<br>如果不使用 Privoxy，本地代理需设置为 SOCKS5 类型的 127.0.0.1:9050。</p>
+<p><strong>Privoxy + Tor + Lantern 组合 —— 匿名上网</strong><br>配置 Privoxy，Linux 系统中位于 /etc/privoxy/config：</p>
+<pre><code>forward-socks5 / 127.0.0.1:9050 .
+listen-address 127.0.0.1:8118    # 可改为 0.0.0.0:8118 允许局域网的连接
+</code></pre><p>配置 Tor，Windows 系统中位于 %AppData%/tor/torrc，Linux 系统中位于 /etc/tor/torrc：</p>
+<pre><code>HTTPSProxy 127.0.0.1:8787    # Lantern 代理地址
+ReachableAddresses *:80,*:443
+ReachableAddresses reject *:*
+</code></pre><p>本地代理需设置为 HTTP/HTTPS 类型的 127.0.0.1:8118。<br>如果不使用 Privoxy，本地代理需设置为 SOCKS5 类型的 127.0.0.1:9050。</p>
 
         
     
@@ -583,7 +596,7 @@ var app = new Vue({
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2018/06/23/职业发展/【转载】德鲁克谈《自我管理》/cjir762w3000eok7k66ooc9sf/" id="post_nav-newer" class="prev-content">
+        <a href="/2018/03/08/BlockChain/简单比特币原理-区块链的相关应用/cjirgiq4l000pqg7kb4imdlm1/" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -597,7 +610,7 @@ var app = new Vue({
 
     <!-- Next Nav -->
     
-        <a href="/2018/04/19/服务架构/ESB与SOA/cjir762vo0006ok7kxujsavhy/" id="post_nav-older" class="next-content">
+        <a href="/2017/10/18/计算机基础/源码，反码与补码小记/cjirgiq4i000nqg7k60ysebkj/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
@@ -766,6 +779,7 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 <!-- Theme Material -->
+<!--
 
     <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
         <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
@@ -774,6 +788,7 @@ It will not impact the appearance and can give developers a lot of support :)
         </div>
     </a>
 
+-->
 
 <!-- Help & Support -->
 <!--
